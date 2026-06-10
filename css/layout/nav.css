@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Momo+Trust+Display&display=swap');
+
 nav {
     display: flex;
     width: 100vw;
+    height: 8vh;
 
     background: black;
     color: white;
@@ -8,24 +11,34 @@ nav {
     align-items: center;
     justify-content: center;
 
-    min-height: 7vh;
 }
 
 nav ul {
-    border: 1px solid aqua;
+    /* border: 1px solid aqua;  /* Debug */
     display: flex;
-    padding: 1%;
+    padding: 0;
     width: 100%;
+    height: 100%;
     justify-content: flex-end;
 }
 
 nav ul li:first-child {
     margin-right: auto;
+    margin-left: 5%;
+
+    font-family: "Momo Trust Display", Lexend, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
 }
 
 nav ul li {
-    margin: 1%;
+    margin: 1% 2.5% 1% 2.5%;
     list-style: none;
+
+    font-family: Lexend, sans-serif;
+    font-style: normal;
+    font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -33,16 +46,17 @@ nav a:hover {
 }
 
 
-
-@media (pointer: coarse) {
+@media (pointer: coarse) or (max-width: 700px) {
     nav {
         align-items: center;
         justify-content: center;
     }
+
     nav ul{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     nav a:hover {
