@@ -54,10 +54,3 @@ h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-/* Stack and separate sections */
-section {
-    display: flex;
-    border: 1px solid black;
-    justify-content: center;
-    height: 70vh;
-}
