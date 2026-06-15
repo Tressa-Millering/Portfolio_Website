@@ -6,11 +6,14 @@
 
 @import "sections/home.css";
 
+@import "sections/about.css";
 
 @import "sections/skills.css";
 @import "sections/projects.css";
 @import "sections/interests.css";
+@import "sections/contact.css";
 
 section {
-    margin: 50px 0;
+    margin: 20px 0;
+    padding: 3rem 0;
 }

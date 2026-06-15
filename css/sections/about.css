@@ -1,1 +1,41 @@
 
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fdfdfd;
+
+    color: Black;
+}
+
+.about-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.about-wrap img {
+    max-width: 30%;
+    border: 4px solid orange;
+    border-radius: 47%;
+}
+
+.about-wrap div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+.about-wrap div * {
+    text-align: left;
+
+}
+
+
