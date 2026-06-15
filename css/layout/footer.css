@@ -1,6 +1,12 @@
 footer {
-    display: flex;
-    justify-content: center;
     background: black;
     color: white;
 }
+
+footer div {
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+

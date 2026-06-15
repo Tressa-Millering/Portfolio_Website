@@ -1,1 +1,38 @@
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: solid 1px red;
+}
+
+.skills-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    border:solid 1px green;
+
+}
+
+.skills-wrap div {
+    border: solid 1px black;
+    flex-basis: 360px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.skills-wrap div img {
+    border: solid 2px Blue;
+    max-width: 90px;
+}
+

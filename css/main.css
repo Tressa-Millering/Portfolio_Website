@@ -2,15 +2,15 @@
 
 
 @import "layout/nav.css";
-
 @import "layout/footer.css";
 
 @import "sections/home.css";
 
 
-/* Stack and separate sections */
+@import "sections/skills.css";
+@import "sections/projects.css";
+@import "sections/interests.css";
+
 section {
-    display: flex;
-    border: 1px solid black;
-    justify-content: center;
+    margin: 50px 0;
 }
