@@ -31,7 +31,6 @@
 }
 
 .outdoor-headshot {
-    content: url("/assets/OutdoorHeadshot.jpeg");
     max-width: 300px;
     border-radius: 50%;
     border: 10px solid darkgoldenrod;

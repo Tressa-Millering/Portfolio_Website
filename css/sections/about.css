@@ -18,7 +18,6 @@
 }
 
 .indoor-headshot {
-    content: url("/assets/IndoorHeadshot.jpeg");
     max-width: 50%;
     border: 6px solid darkgoldenrod;
     border-radius: 50%;
@@ -63,7 +62,7 @@
 .linkedin-button {
     background-image: url(/assets/linkedin-logo.svg);
     background-color: white;
-    background-size: 33px;
+    background-size: 32px;
 }
 
 .github-button {
