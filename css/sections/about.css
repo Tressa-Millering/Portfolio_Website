@@ -15,27 +15,72 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-
-
 }
 
-.about-wrap img {
-    max-width: 30%;
-    border: 4px solid orange;
-    border-radius: 47%;
+.indoor-headshot {
+    content: url("/assets/IndoorHeadshot.jpeg");
+    max-width: 50%;
+    border: 6px solid darkgoldenrod;
+    border-radius: 50%;
 }
 
-.about-wrap div {
+.about-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-basis: 50%;
-}
-.about-wrap div * {
-    text-align: left;
 
+}
+
+
+.about-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about-links button {
+    color: transparent;
+
+    max-width:50px;
+    height: 50px;
+
+    border-radius: 50%;
+    margin: 1% 3%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-links button:hover {
+    transition: 0.25s ease-in-out;
+    filter: invert(100%);
+}
+
+.linkedin-button {
+    background-image: url(/assets/linkedin-logo.svg);
+    background-color: white;
+    background-size: 33px;
+}
+
+.github-button {
+    background-image: url(/assets/github-logo.svg);
+    background-color: black;
+    background-size: 65px;
+}
+
+.about-content * {
+    width: 100%;
+    text-align: left;
+}
+
+
+.about-content hr {
+    margin-bottom: 4%;
+    margin-right: 15%;
 }
 
 

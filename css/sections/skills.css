@@ -20,18 +20,38 @@
 }
 
 .skills-wrap div {
-    border: solid 1px black;
+    /* border: solid 1px black;     DEBUG */
     flex-basis: 360px;
     margin: 10px;
+    padding-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 
+
 }
 
-.skills-wrap div img {
-    border: solid 2px Blue;
-    max-width: 90px;
+.skills-wrap div div {
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 150px;
+    max-height: 150px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-wrap div div img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.skills-wrap div p {
+    margin: 1% 10% 5% 10%;
+    text-align: center;
 }
 
