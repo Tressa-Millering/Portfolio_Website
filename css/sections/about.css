@@ -29,7 +29,10 @@
     justify-content: center;
     align-items: center;
     flex-basis: 50%;
+}
 
+.about-text {
+    font-size: 1.17em;
 }
 
 
@@ -41,7 +44,7 @@
 
 }
 
-.about-links button {
+.about-links * {
     color: transparent;
 
     max-width:50px;

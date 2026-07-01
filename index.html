@@ -53,7 +53,6 @@
         </div>
     </section>
 
-
     <!-- 2-about -->
     <section class="about">
         <div class="about-wrap">
@@ -61,8 +60,12 @@
                 <img class="indoor-headshot" src="/assets/IndoorHeadshot.jpeg" alt="Indoor Headshot Image"/>
                 <div class="about-links">
 
-                    <button class="linkedin-button">LinkedIn</button>
-                    <button class="github-button">GitHub</button>
+                    <a href="https://www.linkedin.com/in/tressa-millering">
+                        <button class="linkedin-button">LinkedIn</button>
+                    </a>
+                    <a href="https://github.com/Tressa-Millering/">
+                        <button class="github-button">GitHub</button>
+                    </a>
 
                 </div>
             </div>
@@ -73,10 +76,12 @@
                     Tressa Millering
                 </h1>
                 <hr>
-                <h3>
+
+                <div class="about-text">
                     Currently, I'm at the St. Louis campus of University of Missouri (UMSL).
                     <br>
                     I'm working on a Bachelor of Science with:
+
                     <ul>
                         <li>
                             A major in Computer Science
@@ -103,7 +108,8 @@
                             Machine Learning
                         </li>
                     </ul>
-                </h3>
+                </div>
+
 
 
             </div>
@@ -116,66 +122,70 @@
 
     <!-- 3-skills -->
     <section class="skills">
-        <h1>
+        <h1 class="skills-title">
             Skills
         </h1>
+
         <div class="skills-wrap">
 
-            <div>
-                <div>
+            <div class="skill-card">
+                <div class="skill-img-wrap">
                     <img src="/assets/c++logo.svg" alt="C++ Symbol"/>
                 </div>
                 <h2>
                     C++
                 </h2>
-                <p>
+                <p class="skill-card-text">
                     This is text in the card! I
                 </p>
             </div>
-            <div>
-                <div>
+
+            <div class="skill-card">
+                <div class="skill-img-wrap">
                     <img src="/assets/java-logo.svg" alt="Java Symbol"/>
                 </div>
                 <h2>
                     Java
                 </h2>
-                <p>
+                <p class="skill-card-text">
                     I have been owrking with Java for
                 </p>
             </div>
-            <div>
-                <div>
+
+            <div class="skill-card">
+                <div class="skill-img-wrap">
                     <img src="/assets/python-logo.svg" alt="Python Symbol"/>
                 </div>
                 <h2>
                     Python
                 </h2>
-                <p>
+                <p class="skill-card-text">
                     I have been working with Python for 5 years.
                     I primarily use libraries such as TKinter, NumPy,
                     and MatPlotLib for statistical analysis programs.
                 </p>
             </div>
-            <div>
-                <div>
+
+            <div class="skill-card">
+                <div class="skill-img-wrap">
                     <img src="/assets/terminal-symbol.svg" alt="Terminal Symbol"/>
                 </div>
                 <h2>
                     Linux/Bash
                 </h2>
-                <p>
+                <p class="skill-card-text">
                     The terminal
                 </p>
             </div>
 
-            <div>
-                <div>
+            <div class="skill-card">
+                <div class="skill-img-wrap">
                     <img src="/assets/webdev-symbol.svg" alt="Web Dev Symbol"/>
                 </div>
                 <h2>
                     HTML, CSS, and JavaScript
                 </h2>
-                <p>
+                <p class="skill-card-text">
                     I've been practicing web development for a little over
                     a year now, and have found myself to be a quick learner.
                     When using libraries, I have experience with REST API's, React, Express.js,
@@ -183,19 +193,18 @@
                 </p>
             </div>
 
-            <div>
-                <div>
-                    <img src="/assets/unity-logo.svg" alt="Unity Symbol"/>
+            <div class="skill-card">
+                <div class="skill-img-wrap">
+                    <img class="unity-logo" src="/assets/unity-svgrepo-com.svg" alt="Unity Symbol"/>
                 </div>
                 <h2>
                     Unity Game Engine and C#
                 </h2>
-                <p>
+                <p class="skill-card-text">
                     I have been working with C# in Unity Game Engine for around 4 years.
                     Game development is an area I'm particularly passionate about.
                 </p>
             </div>
-
 
         </div>
     </section>
@@ -208,13 +217,18 @@
 
         <div class="proj-wrap">
 
-            <div>
-                <img src="/assets/python-logo.svg" alt="c++"/>
-                <h2>
-                    Test Content
-                </h2>
-                <p>
-                    This is text in the card! I
+            <div class="proj-card">
+                <img class="proj-img" src="/assets/chip8-screenshot.png" alt="c++"/>
+                <p class="proj-title">
+                    Project Title
+                </p>
+                <div class="proj-keywords">
+                    <span>Keyword</span>
+                    <span>Keyword</span>
+                    <span>Keyword</span>
+                </div>
+                <p class="proj-description">
+                    Brief Description
                 </p>
             </div>
 

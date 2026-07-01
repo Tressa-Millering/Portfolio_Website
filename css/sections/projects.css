@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: center;
 
-
 }
+
 
 .proj-wrap{
 
@@ -19,19 +19,46 @@
 
 }
 
-.proj-wrap div {
-    border: solid 1px black;
+.proj-card {
+    border: solid 3px black;
+    border-radius: 15px;
+
     flex-basis: 360px;
     margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+    height: 400px;
 
 }
 
-.proj-wrap div img {
-    border: solid 2px Blue;
-    max-width: 90px;
+.proj-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
+
+.proj-keywords *{
+    border: solid 1px #AAAAAA;
+    background-color: #EEEEEE;
+    color: #666666;
+
+    border-radius: 50px;
+    margin: 5px;
+    padding: 0.1rem 0.5rem;
+}
+
+.proj-description {
+
+}
+
+.proj-img {
+    width: 100%;
+    height: 70%;
+
+    object-fit: cover;
+    background-color: lightgray;
+    border-radius: 15px 15px 0 0;
+    border-bottom: solid 3px black;
+
+}
+
 
