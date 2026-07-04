@@ -66,3 +66,6 @@ section {
     margin-bottom: 0;
     padding: 3rem 0;
 }
+html {
+    scroll-behavior: smooth;
+}

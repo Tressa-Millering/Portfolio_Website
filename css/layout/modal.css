@@ -1,6 +1,8 @@
 
 .modal {
+
     display: none;
+
     position: fixed;
     z-index: 10;
     top: 3%;
@@ -19,6 +21,8 @@
 
     box-shadow: 0 0 75px 50px #333333;
 
+    transition: all 5s ease-in-out;
+
 }
 
 .close-modal {
@@ -31,6 +35,7 @@
 
 .show {
     display: block;
+    opacity: 1;
 }
 
 .scroll-lock {
