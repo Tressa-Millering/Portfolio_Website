@@ -10,10 +10,7 @@
 
 @import "sections/skills.css";
 @import "sections/projects.css";
-@import "sections/interests.css";
+@import "sections/experience.css";
 @import "sections/contact.css";
 
-section {
-    margin: 20px 0;
-    padding: 3rem 0;
-}
+@import "layout/modal.css";

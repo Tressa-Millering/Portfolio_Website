@@ -78,24 +78,12 @@
                 <hr>
 
                 <div class="about-text">
-                    Currently, I'm at the St. Louis campus of University of Missouri (UMSL).
+                    Currently, I'm a student at the St. Louis campus of University of Missouri (UMSL).
                     <br>
-                    I'm working on a Bachelor of Science with:
+                    I'm working on a Bachelor of Science in Computer Science and
+                    Mathematics, alongside a certificate in Artificial Intelligence.
 
-                    <ul>
-                        <li>
-                            A major in Computer Science
-                        </li>
-                        <li>
-                            A minor in Mathematics
-                        </li>
-                        <li>
-                            A certificate in Artificial Intelligence
-                        </li>
-                    </ul>
-
-                    <br>
-
+                    <br><br>
                     Some specific areas of CS I have interest in are:
                     <ul>
                         <li>
@@ -136,7 +124,11 @@
                     C++
                 </h2>
                 <p class="skill-card-text">
-                    This is text in the card! I
+                    C++ is my bread and butter. I've been working with it
+                    for around <b>six years</b> with no signs of stopping.
+                    Some standout projects in it include my Chip8 Interpreter,
+                    project2, and project3. In regard to libraries, I like
+                    SFML.
                 </p>
             </div>
 
@@ -148,7 +140,9 @@
                     Java
                 </h2>
                 <p class="skill-card-text">
-                    I have been owrking with Java for
+                    I have been working with Java for around <b>three years</b>.
+                    I've experience with Swing GUI.
+                    Maybe cut this section, I don't have a ton to show for it.
                 </p>
             </div>
 
@@ -160,9 +154,11 @@
                     Python
                 </h2>
                 <p class="skill-card-text">
-                    I have been working with Python for 5 years.
+                    I have been working with Python for <b>five years</b>.
                     I primarily use libraries such as TKinter, NumPy,
                     and MatPlotLib for statistical analysis programs.
+                    Alongside this, I like using Python for catch-all
+                    scripting solutions and algorithm efficiency analysis.
                 </p>
             </div>
 
@@ -174,7 +170,11 @@
                     Linux/Bash
                 </h2>
                 <p class="skill-card-text">
-                    The terminal
+                    As any programmer needs to be, I am quite comfortable
+                    in the terminal. I've been working with Linux systems as my
+                    daily drivers for around a year, and have worked on a
+                    multitude of bash scripts for data processing, automating
+                    menial tasks, and improving my experience with Linux.
                 </p>
             </div>
 
@@ -183,13 +183,15 @@
                     <img src="/assets/webdev-symbol.svg" alt="Web Dev Symbol"/>
                 </div>
                 <h2>
-                    HTML, CSS, and JavaScript
+                    HTML, CSS, JavaScript
                 </h2>
                 <p class="skill-card-text">
                     I've been practicing web development for a little over
                     a year now, and have found myself to be a quick learner.
-                    When using libraries, I have experience with REST API's, React, Express.js,
-                    and Node.js.
+                    <br>I excel at taking mock up designs and turning them into
+                    <b>modular</b> and <b>scalable</b> code.
+                    When using libraries, I have experience with REST API's,
+                    React, Express.js, and Node.js.
                 </p>
             </div>
 
@@ -202,7 +204,9 @@
                 </h2>
                 <p class="skill-card-text">
                     I have been working with C# in Unity Game Engine for around 4 years.
-                    Game development is an area I'm particularly passionate about.
+                    Game development is an area I'm particularly passionate about,
+                    resulting in projects such as a custom chess game, a modular
+                    2D platforming controller, and an endless runner.
                 </p>
             </div>
 
@@ -214,32 +218,163 @@
         <h1>
             Projects
         </h1>
+        <p>
+            Click a project to expand!
+        </p>
 
-        <div class="proj-wrap">
+        <div class="proj-card-deck">
 
+            <!-- Chip8 -->
             <div class="proj-card">
-                <img class="proj-img" src="/assets/chip8-screenshot.png" alt="c++"/>
-                <p class="proj-title">
-                    Project Title
-                </p>
-                <div class="proj-keywords">
-                    <span>Keyword</span>
-                    <span>Keyword</span>
-                    <span>Keyword</span>
+                <div class="proj-card-inner">
+
+                    <div class="proj-card-front">
+                        <img class="proj-card-img" src="/assets/chip8-screenshot.png" alt="c++"/>
+                        <div class="proj-card-front-text">
+                            <p class="proj-card-title">
+                                Chip8 Interpreter
+                            </p>
+                            <p class="proj-card-description">
+                                A command line interpreter for the Chip8 Language.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="proj-card-back">
+                        <p class="proj-card-title-back">
+                            Chip8 Interpreter
+                        </p>
+                        <div class="proj-card-keywords">
+                            <span>C++</span>
+                            <span>SFML</span>
+                        </div>
+                        <div class="proj-card-description">
+                            This is a command line interpreter for the Chip8, a
+                            programming language developed for early video game
+                            development. It is written in C++, using SFML 3.0.2
+                            for the screen and user interaction.
+
+                            <img class="proj-card-img-back" src="/assets/chip8-screenshot.png" alt="c++"/>
+
+                            <span>
+                            View this project on
+                            <a href="https://github.com/Tressa-Millering/">
+                                GitHub
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+
                 </div>
-                <p class="proj-description">
-                    Brief Description
-                </p>
             </div>
+
+            <!-- Paint Blob Sim -->
+            <div class="proj-card">
+                <div class="proj-card-inner">
+
+                    <div class="proj-card-front">
+                        <img class="proj-card-img" src="/assets/chip8-screenshot.png" alt="c++"/>
+                        <div class="proj-card-front-text">
+                            <p class="proj-card-title">
+                                Paint Blob Simulation
+                            </p>
+                            <p class="proj-card-description">
+                                A simulation of paint blobs falling on a canvas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="proj-card-back">
+                        <p class="proj-card-title-back">
+                            Paint Blob Simulation
+                        </p>
+                        <div class="proj-card-keywords">
+                            <span>Python</span>
+                            <span>TKinter</span>
+                            <span>MatPlotLib</span>
+                        </div>
+                        <div class="proj-card-description">
+                            This script simulates dropping red, green, or
+                            blue paint blobs onto an empty canvas.
+                            <br>Each tick, a blob is dropped at a random location,
+                            overwriting any prior paint. Multiple experiments
+                            are run using parameters provided by the user.
+
+                            <img class="proj-card-img-back" src="/assets/chip8-screenshot.png" alt="c++"/>
+
+                            <span>
+                            View this project on
+                            <a href="https://github.com/Tressa-Millering/">
+                                GitHub
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Lexicographical Analyzer -->
+            <button class="proj-card">
+                <div class="proj-card-inner">
+
+                    <div class="proj-card-front">
+                        <img class="proj-card-img" src="/assets/chip8-screenshot.png" alt="c++"/>
+                        <div class="proj-card-front-text">
+                            <p class="proj-card-title">
+                                Lexicographical Analyzer
+                            </p>
+                            <p class="proj-card-description">
+                                A basic lexicographical analyzer built in C++.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="proj-card-back">
+                        <p class="proj-card-title-back">
+                            Lexicographical Analyzer
+                        </p>
+                        <div class="proj-card-keywords">
+                            <span>C++</span>
+                        </div>
+                        <div class="proj-card-description">
+                            This is a basic lexicographical analyzer built in C++. It takes a file as input and breaks the file down into the following token types:
+
+                            Identifiers
+                            Keywords
+                            Integer Literals
+                            Float Literals
+                            String Literals
+                            Operators
+                            Delimiters
+
+                            It also handles the end of the file and errors via the tokens:
+
+                            End of File
+                            Error
+
+
+                            <img class="proj-card-img-back" src="/assets/chip8-screenshot.png" alt="c++"/>
+
+                            <span>
+                            View this project on
+                            <a href="https://github.com/Tressa-Millering/">
+                                GitHub
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </button>
 
         </div>
     </section>
 
     <!-- 5-interests -->
-    <section class="interests">
+    <section class="experience">
         <h1>
-            Interests
-
+            Experience
         </h1>
         <div class="int-wrap">
             <div>
@@ -302,5 +437,46 @@
             </p>
         </div>
     </footer>
+
 </body>
+
+    <div class="modal">
+        <button class="close-modal"> Expand </button>
+        <p class="proj-card-title-back">
+            Chip8 Interpreter
+        </p>
+
+        <div class="proj-card-keywords">
+            <span>C++</span>
+            <span>SFML</span>
+        </div>
+
+        <div class="proj-card-description">
+            This is a command line interpreter for the Chip8, a
+            programming language developed for early video game
+            development. It is written in C++, using SFML 3.0.2
+            for the screen and user interaction.
+
+            <img class="proj-card-img-back" src="/assets/chip8-screenshot.png" alt="c++"/>
+
+            <span>
+                View this project on
+                <a href="https://github.com/Tressa-Millering/">
+                    GitHub
+                </a>
+                </span>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script src="/scripts/project-cards.js"></script>
 </html>

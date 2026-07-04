@@ -54,3 +54,15 @@ h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+
+/*  My Universal Stuff */
+
+body {
+    background-color: #222222;
+}
+
+section {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 3rem 0;
+}
