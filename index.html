@@ -375,6 +375,67 @@
                 </span>
             </button>
 
+            <!-- Wandering in the Woods  -->
+            <button class="proj-card">
+                <span class="proj-card-inner">
+
+                    <span class="proj-card-front">
+                        <img class="proj-card-img" src="/assets/Heatmap.png" alt="Heatmap"/>
+                        <span class="proj-card-front-text">
+                            <span class="proj-card-title">
+                                Wandering in the Woods
+                            </span>
+                            <span class="proj-card-description">
+                                This program simulates two strangers moving randomly
+                                to determine if and when they meet.
+                            </span>
+                        </span>
+                    </span>
+
+                    <span class="proj-card-back">
+                        <span class="proj-card-title-back">
+                            Wandering in the Woods
+                        </span>
+                        <span class="proj-card-keywords">
+                            <span>Python</span>
+                            <span>Numpy</span>
+                            <span>MatPlotLib</span>
+                        </span>
+                        <span class="proj-card-description">
+                            The program first takes validated inputs for
+                            N (grid size, NxN), T (ticks per simulation),
+                            and R (number of simulations).
+                            It then runs R simulations. This entails simulating
+                            a grid with two people starting on opposite ends,
+                            each moving in a random direction each tick. If they
+                            were to move off the grid, they simply don't move
+                            at all. The simulation ends when, after moving, the
+                            two people are at the same grid location; alternatively,
+                            it will end when this loop has iterated T times
+                            without a meeting. Each simulation that ends in a
+                            meeting records how many ticks it took to get there
+                            and the coordinates of the meeting location.
+                            Finally, the program writes the maximum, minimum,
+                            and mean number of ticks over all simulations, a
+                            histogram of ticks per simulation, and a heat map
+                            of meeting locations. These results are then saved
+                            to a timestamped output file.
+
+                            <img class="proj-card-img-back" src="/assets/Heatmap.png" alt="Heatmap"/>
+                            <img class="proj-card-img-back" src="/assets/Histogram.png" alt="Histogram"/>
+
+                            <span>
+                            View this project on
+                            <a href="https://github.com/Tressa-Millering/Wandering_In_The_Woods" class="proj-card-link">
+                                GitHub
+                            </a>
+                            </span>
+                        </span>
+                    </span>
+
+                </span>
+            </button>
+
         </div>
     </section>
 
@@ -383,18 +444,15 @@
         <h1>
             Experience
         </h1>
-        <div class="int-wrap">
-            <div>
-                <img src="/assets/java-logo.svg" alt="c++"/>
-                <h2>
-                    Test Content
-                </h2>
-                <p>
-                    This is text in the card! I
-                </p>
+        <div class="experience-wrap">
+            <div class="exp-content">
+                Content
             </div>
+            <div class="exp-image">
 
+            </div>
         </div>
+
     </section>
 
     <!-- 6-contact -->
@@ -453,7 +511,7 @@
             <div class="footer-jumps">
                 <ul class="link-list">
                     <li>
-                        <a class="resume-link" href="/Millering - Resume - 2026.pdf" download>
+                        <a class="resume-link" href="/Millering - Resume - 2026.pdf">
                             Resume
                         </a>
                     </li>
@@ -590,5 +648,57 @@
 
 </div>
 
+<!-- Wandering in the Woods -->
+<div class="modal">
+    <div class="top-line">
+        <div class="close-modal"></div>
+        <p class="proj-card-title-back">
+            Wandering in the Woods
+        </p>
+
+        <button class="close-modal">
+            <img src="/assets/close-bold-svgrepo-com.svg" alt="X"/>
+        </button>
+    </div>
+
+    <span class="proj-card-keywords">
+        <span>Python</span>
+        <span>Numpy</span>
+        <span>MatPlotLib</span>
+    </span>
+    <br>
+    <br>
+    <span class="proj-card-description">
+        The program first takes validated inputs for
+        N (grid size, NxN), T (ticks per simulation),
+        and R (number of simulations).
+        It then runs R simulations. This entails simulating
+        a grid with two people starting on opposite ends,
+        each moving in a random direction each tick. If they
+        were to move off the grid, they simply don't move
+        at all. The simulation ends when, after moving, the
+        two people are at the same grid location; alternatively,
+        it will end when this loop has iterated T times
+        without a meeting. Each simulation that ends in a
+        meeting records how many ticks it took to get there
+        and the coordinates of the meeting location.
+        Finally, the program writes the maximum, minimum,
+        and mean number of ticks over all simulations, a
+        histogram of ticks per simulation, and a heat map
+        of meeting locations. These results are then saved
+        to a timestamped output file.
+
+        <img class="proj-card-img-back" src="/assets/Heatmap.png" alt="Heatmap"/>
+        <img class="proj-card-img-back" src="/assets/Histogram.png" alt="Histogram"/>
+
+        <span>
+            View this project on
+            <a href="https://github.com/Tressa-Millering/Wandering_In_The_Woods" class="proj-card-link">
+                GitHub
+            </a>
+        </span>
+    </span>
+
+</div>
 
 </html>
