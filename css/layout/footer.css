@@ -1,12 +1,61 @@
-footer {
+.footer {
     background: black;
+    color: white;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.footer.spread * {
+    min-height: 9vh;
+    max-height: 9vh;
+
+    min-width: 9vh;
+    max-width: 9vh;
+}
+
+.footer.spread.linkedin-button {
+    background-size: 60%;
+}
+
+.footer.spread.github-button {
+    background-size: 140%;
+}
+
+
+.footer-jumps * {
+    font-size: 1.2rem;
+    margin: 50px;
+}
+
+.resume-link {
+    text-decoration: none;
+}
+
+
+.resume-link:link {
     color: white;
 }
 
-footer div {
-    display: flex;
-    justify-content: space-evenly;
-
-
+.resume-link:hover {
+    color: pink;
 }
 
+.resume-link:visited {
+    color: #fca36c;
+}

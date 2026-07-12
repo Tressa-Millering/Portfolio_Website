@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Momo+Trust+Display&display=swap');
 
-nav {
+.navbar {
     display: flex;
     width: 100vw;
     height: 8vh;
@@ -25,12 +25,8 @@ nav {
 
 }
 
-nav * {
-    transition:  all 1s ease;
-}
 
-
-.scrolled {
+.navbar.scrolled {
     height: 5vh;
     background-image: none;
     background-color: #222222;
@@ -38,12 +34,12 @@ nav * {
     margin-top: 0;
     padding-top: 0;
 }
-.scrolled * {
+.navbar.scrolled * {
     margin-top: 0;
-    padding-top: 2px;
+    padding-top: 3px;
 }
 
-nav ul {
+.link-list {
     /* border: 1px solid aqua;  /* Debug */
     display: flex;
     padding: 0;
@@ -52,7 +48,7 @@ nav ul {
     justify-content: flex-end;
 }
 
-nav ul li:first-child {
+.link-list li:first-child {
     margin-right: auto;
     margin-left: 5%;
 
@@ -60,9 +56,10 @@ nav ul li:first-child {
     font-weight: 400;
     font-style: normal;
 
+
 }
 
-nav ul li {
+.link-list li {
     margin: 1% 2.5% 1% 2.5%;
     list-style: none;
 
@@ -71,26 +68,27 @@ nav ul li {
 
 }
 
-nav a:hover {
+.link-list a:hover {
     color:pink;
-    transition: 0s;
+    transition: 0.5s;
 }
 
 
+
 @media (pointer: coarse) or (max-width: 700px) {
-    nav {
+    .navbar {
         align-items: center;
         justify-content: center;
     }
 
-    nav ul{
+    .link-list {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    nav a:hover {
+    .link-list a:hover {
         color:pink;
     }
 

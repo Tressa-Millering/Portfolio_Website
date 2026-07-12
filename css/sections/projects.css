@@ -24,6 +24,10 @@
     border-radius: 15px;
 }
 
+.proj-card span {
+    display: block;
+}
+
 
 .proj-card-inner {
     position: relative;
@@ -97,9 +101,11 @@
 
 .proj-card-keywords {
     margin-bottom: 10px;
+    flex-direction: row;
 }
 
-.proj-card-keywords *{
+.proj-card-keywords span{
+    display: inline;
     border: solid 1px #AAAAAA;
     background-color: #EEEEEE;
     color: #666666;

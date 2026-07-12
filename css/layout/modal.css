@@ -35,17 +35,17 @@
 
 
 
+
 .show{
     top: 3%;
     opacity: 1;
 }
 
 .exit {
-    top: 110%;
+    top: 100%;
 }
 
 .close-modal {
-
 
     margin-right: 2%;
     width: 50px;
@@ -68,4 +68,5 @@
 .animation-lock {
     transform: rotateY(180deg) !important;
 }
+
 

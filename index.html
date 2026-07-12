@@ -8,8 +8,8 @@
     <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <ul class="link-list">
             <li>
                 <a class="home scroll-link"><u>Tressa Millering</u></a>
             </li>
@@ -31,6 +31,11 @@
         </ul>
     </nav>
 
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top">
+        <img src="/assets/arrow-down-360-svgrepo-com.svg" alt="scroll up"/>
+    </button>
+
     <!-- 1-home -->
     <section class="splash">
         <div class="content-wrapper">
@@ -49,7 +54,9 @@
                 </em>
             </h3>
 
-            <button>Enter Portfolio</button>
+            <button class="enter-button">
+                <img src="/assets/arrow-down-360-svgrepo-com.svg" alt="enter site"/>
+            </button>
         </div>
     </section>
 
@@ -258,7 +265,7 @@
 
                             <span>
                             View this project on
-                            <a href="https://github.com/Tressa-Millering/" class="proj-card-link">
+                            <a href="https://github.com/Tressa-Millering/Chip8_Interpreter" class="proj-card-link">
                                 GitHub
                             </a>
                             </span>
@@ -269,31 +276,31 @@
             </div>
 
             <!-- Paint Blob Sim -->
-            <div class="proj-card">
-                <div class="proj-card-inner">
+            <button class="proj-card">
+                <span class="proj-card-inner">
 
-                    <div class="proj-card-front">
+                    <span class="proj-card-front">
                         <img class="proj-card-img" src="/assets/paintblobthumb.png" alt="c++"/>
-                        <div class="proj-card-front-text">
-                            <p class="proj-card-title">
+                        <span class="proj-card-front-text">
+                            <span class="proj-card-title">
                                 Paint Blob Simulation
-                            </p>
-                            <p class="proj-card-description">
+                            </span>
+                            <span class="proj-card-description">
                                 A simulation of paint blobs falling on a canvas.
-                            </p>
-                        </div>
-                    </div>
+                            </span>
+                        </span>
+                    </span>
 
-                    <div class="proj-card-back">
-                        <p class="proj-card-title-back">
+                    <span class="proj-card-back">
+                        <span class="proj-card-title-back">
                             Paint Blob Simulation
-                        </p>
-                        <div class="proj-card-keywords">
+                        </span>
+                        <span class="proj-card-keywords">
                             <span>Python</span>
                             <span>TKinter</span>
                             <span>MatPlotLib</span>
-                        </div>
-                        <div class="proj-card-description">
+                        </span>
+                        <span class="proj-card-description">
                             This script simulates dropping red, green, or
                             blue paint blobs onto an empty canvas.
                             <br>Each tick, a blob is dropped at a random location,
@@ -304,40 +311,40 @@
 
                             <span>
                             View this project on
-                            <a href="https://github.com/Tressa-Millering/" class="proj-card-link">
+                            <a href="https://github.com/Tressa-Millering/Paint_Blob_Simulation/" class="proj-card-link">
                                 GitHub
                             </a>
                             </span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
 
-                </div>
-            </div>
+                </span>
+            </button>
 
             <!-- Lexicographical Analyzer -->
             <button class="proj-card">
-                <div class="proj-card-inner">
+                <span class="proj-card-inner">
 
-                    <div class="proj-card-front">
+                    <span class="proj-card-front">
                         <img class="proj-card-img" src="/assets/LexicoSS.png" alt="c++"/>
-                        <div class="proj-card-front-text">
-                            <p class="proj-card-title">
+                        <span class="proj-card-front-text">
+                            <span class="proj-card-title">
                                 Lexicographical Analyzer
-                            </p>
-                            <p class="proj-card-description">
+                            </span>
+                            <span class="proj-card-description">
                                 A basic lexicographical analyzer built in C++.
-                            </p>
-                        </div>
-                    </div>
+                            </span>
+                        </span>
+                    </span>
 
-                    <div class="proj-card-back">
-                        <p class="proj-card-title-back">
+                    <span class="proj-card-back">
+                        <span class="proj-card-title-back">
                             Lexicographical Analyzer
-                        </p>
-                        <div class="proj-card-keywords">
+                        </span>
+                        <span class="proj-card-keywords">
                             <span>C++</span>
-                        </div>
-                        <div class="proj-card-description">
+                        </span>
+                        <span class="proj-card-description">
                             This is a basic lexicographical analyzer built in C++. It takes a file as input and breaks the file down into the following token types:
 
                             Identifiers
@@ -358,14 +365,14 @@
 
                             <span>
                             View this project on
-                            <a href="https://github.com/Tressa-Millering/" class="proj-card-link">
+                            <a href="https://github.com/Tressa-Millering/Lexicographical-Analyzer" class="proj-card-link">
                                 GitHub
                             </a>
                             </span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
 
-                </div>
+                </span>
             </button>
 
         </div>
@@ -424,18 +431,40 @@
 
     </section>
 
-    <footer>
-        <div>
-            <p>
-                Copyright
-            </p>
-            <p>
-                socials
-            </p>
-            <p>
-                links
-            </p>
-        </div>
+    <footer class="footer">
+            <div>
+                <p>
+                    <em>
+                        Copyright © Tressa Millering 2026. <br>
+                        All rights reserved.
+                    </em>
+                </p>
+            </div>
+            <div class="about-links spread">
+
+                <a href="https://www.linkedin.com/in/tressa-millering">
+                    <button class="linkedin-button">LinkedIn</button>
+                </a>
+                <a href="https://github.com/Tressa-Millering/">
+                    <button class="github-button">GitHub</button>
+                </a>
+
+            </div>
+            <div class="footer-jumps">
+                <ul class="link-list">
+                    <li>
+                        <a class="resume-link" href="/Millering - Resume - 2026.pdf" download>
+                            Resume
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
     </footer>
 
 </body>
@@ -469,7 +498,7 @@
 
         <span>
             View this project on
-            <a href="https://github.com/Tressa-Millering/">
+            <a href="https://github.com/Tressa-Millering/Chip8_Interpreter">
                 GitHub
             </a>
         </span>
@@ -509,7 +538,7 @@
 
         <span>
             View this project on
-            <a href="https://github.com/Tressa-Millering/">
+            <a href="https://github.com/Tressa-Millering/Paint_Blob_Simulation/">
                 GitHub
             </a>
         </span>
@@ -553,14 +582,13 @@
 
         <span>
             View this project on
-            <a href="https://github.com/Tressa-Millering/">
+            <a href="https://github.com/Tressa-Millering/Lexicographical-Analyzer">
                 GitHub
             </a>
         </span>
     </div>
 
 </div>
-
 
 
 </html>

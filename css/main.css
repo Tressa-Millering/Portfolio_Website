@@ -3,6 +3,7 @@
 
 @import "layout/nav.css";
 @import "layout/footer.css";
+@import "layout/scroll-to-top.css";
 
 @import "sections/home.css";
 

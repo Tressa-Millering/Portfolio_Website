@@ -37,3 +37,42 @@
     border: 10px solid darkgoldenrod;
 }
 
+.enter-button {
+    transition: 0.2s ease;
+    border-radius: 25px;
+    border: gray solid 2px;
+    width: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    box-shadow: 0 0 7px 5px #333333;
+
+}
+.enter-button img {
+    opacity: 0.7;
+    margin: 5px auto auto auto;
+    height: 35px;
+    animation: bounce 1s infinite;
+}
+
+.enter-button:hover {
+    transition: 0.2s ease;
+    background-color: #DDDDDD;
+    border: solid darkgray 4px;
+
+    transform: translateY(-5px);
+}
+
+.enter-button:hover img {
+    animation: none;
+}
+
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-7px); }
+    60% { transform: translateY(-2.5px); }
+
+}
+
+
