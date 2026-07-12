@@ -4,6 +4,8 @@
 @import "layout/nav.css";
 @import "layout/footer.css";
 @import "layout/scroll-to-top.css";
+@import "layout/carousel.css";
+@import "layout/modal.css";
 
 @import "sections/home.css";
 
@@ -14,4 +16,3 @@
 @import "sections/experience.css";
 @import "sections/contact.css";
 
-@import "layout/modal.css";
