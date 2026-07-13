@@ -1,37 +1,37 @@
 export default function initCarousel() {
-    const carousels = document.querySelectorAll('.carousel');
-    const forwardButtons = document.querySelectorAll('.carousel-prev');
-    const backButtons = document.querySelectorAll('.carousel-next');
 
-    const length = carousels[0].children[0].childElementCount;
-    let currIndex = 0;
-    let currPos = 0;
+    let carousels = [];
 
-
-
-    forwardButtons.forEach((forwardButton, index) => {
-        forwardButton.addEventListener('click', (e) => {
-            const kids = carousels[index].children[0];
-            currPos += kids.offsetWidth;
-            currIndex++;
-            if (currIndex >= length) {
-                currIndex = 0;
-                currPos = 0;
-            }
-            kids.style.transform = `translateX(-${currPos}px)`;
-        })
+    document.querySelectorAll('.carousel').forEach((carousel, index) => {
+        carousels[index] = {
+            content: carousel.children[0],
+            currIndex: 0,
+            currPos: 0,
+            width: carousel.children[0].offsetWidth,
+            length: carousel.children[0].childElementCount,
+            nextButton: carousel.querySelector('.carousel-next'),
+            prevButton: carousel.querySelector('.carousel-prev')
+        }
     })
 
-    backButtons.forEach((backButton, index) => {
-        backButton.addEventListener('click', (e) => {
-            const kids = carousels[index].children[0];
-            currPos -= kids.offsetWidth;
-            currIndex--;
-            if (currIndex < 0) {
-                currIndex = length;
-                currPos = ((length-1) * kids.offsetWidth);
+    carousels.forEach((carousel, index) => {
+        carousel.prevButton.addEventListener('click', () => {
+            carousels[index].currPos += carousels[index].width;
+            carousels[index].currIndex++;
+            if (carousels[index].currIndex >= carousels[index].length) {
+                carousels[index].currIndex = 0;
+                carousels[index].currPos = 0;
             }
-            kids.style.transform = `translateX(-${currPos}px)`;
+            carousels[index].content.style.transform = `translateX(-${carousels[index].currPos}px)`;
+        })
+        carousel.nextButton.addEventListener('click', () => {
+            carousels[index].currPos -= carousels[index].width;
+            carousels[index].currIndex--;
+            if (carousels[index].currIndex < 0) {
+                carousels[index].currIndex = carousels[index].length;
+                carousels[index].currPos = ((carousels[index].length - 1) * carousels[index].width);
+            }
+            carousels[index].content.style.transform = `translateX(-${carousels[index].currPos}px)`;
         })
     })
 

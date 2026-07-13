@@ -66,13 +66,13 @@
 }
 
 .linkedin-button {
-    background-image: url(/assets/linkedin-logo.svg);
+    background-image: url(/assets/symbols/linkedin-logo.svg);
     background-color: white;
     background-size: 32px;
 }
 
 .github-button {
-    background-image: url(/assets/github-logo.svg);
+    background-image: url(/assets/symbols/github-logo.svg);
     background-color: black;
     background-size: 65px;
 }
