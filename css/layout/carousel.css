@@ -1,12 +1,68 @@
 .carousel {
     overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+    border-radius: 25px;
+
+    position: relative;
+
 }
 
 .carousel-images {
-
-
-
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    width: 100%;
+
+
 }
+
+.carousel-images *{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    flex: 0 0 100%;
+}
+
+
+.carousel-controls {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.carousel-controls button:hover,
+.carousel-controls button:hover ~ button {
+    opacity: 0.5;
+}
+
+
+.carousel-next, .carousel-prev {
+    background-color: darkgray;
+    opacity: 0.3;
+    border: none;
+    position: absolute;
+    height: 33%;
+    top: 33%;
+
+
+}
+
+.carousel-next:hover, .carousel-prev:hover {
+    opacity: 1 !important;
+}
+
+.carousel-next {
+    left: 0;
+    & img {
+        transform: scaleX(-1);
+    }
+}
+
+.carousel-prev {
+    right: 0;
+}
+
+
