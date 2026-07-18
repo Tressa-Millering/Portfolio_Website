@@ -72,6 +72,9 @@
 
 .exp-content {
 
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 1);
+
+
     position: relative;
 
     border-radius: 25px;
@@ -111,6 +114,8 @@
 }
 
 .exp-image {
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 1);
+
     position: relative;
 
     height: 40vh;
@@ -130,13 +135,17 @@
 .exp-item.is-active > .exp-image:hover {
 
     z-index: 2;
-    transform: scale(1.05) translateY(-8px);
+    transform: scale(1.5) translateY(-8px);
 
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1);
+}
 
+.exp-item.is-active > .exp-image:hover .carousel-controls {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
 }
 
 .exp-item.is-active > .exp-image:hover + .exp-content {
-    opacity: 0.5;
+    opacity: 0.2;
 }
 

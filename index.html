@@ -491,10 +491,19 @@
                             <button class="carousel-prev">
                                 <img src="/assets/navigation/chevron-right.svg" alt="Next"/>
                             </button>
+                            <div class="carousel-selectors" role="radiogroup">
+                                <button aria-selected="true"></button>
+                                <button aria-selected="false"></button>
+                                <button aria-selected="false"></button>
+                                <button aria-selected="false"></button>
+                                <button aria-selected="false"></button>
+                                <button aria-selected="false"></button>
+                                <button aria-selected="false"></button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="exp-content">
                     <p class="exp-title">
                         Lighting Designer • <em>St. Louis Community College</em>
@@ -531,25 +540,43 @@
             Email: tressamillering@gmail.com <br>
             Phone: (636) 495-3195 <br>
             <br>
-            <span>Or contact me here!</span>
-            <form>
+            <span>Or contact me with the form below!</span>
+
+
+                  <!--action="https://formspree.io/f/xpqvpwej">-->
+            <form method="post" autocomplete="off">
+
                 <div>
-                    <label>
-                        <input type="text" placeholder="Name*">
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Email*">
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Phone">
-                    </label>
+                    <div class="input-group">
+                        <div class="input-item">
+                            <input type="text" name="name" id="name"
+                                   placeholder="Name*" required>
+                            <label for="name"></label>
+                        </div>
+                        <div class="input-item">
+                            <input type="email" name="email" id="email"
+                                   placeholder="Email*" required>
+                            <label for="email"></label>
+                        </div>
+                        <div class="input-item">
+                            <input type="tel" name="phone" id="phone"
+                                   placeholder="Phone" required>
+                            <label for="phone"></label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-item">
+                            <textarea name="message" id="message" autocomplete="off"
+                                      placeholder="Type your message out here..." required></textarea>
+                            <label for="message"></label>
+                        </div>
+
+                    </div>
                 </div>
-                    <label>
-                        <textarea>
 
-                        </textarea>
-                    </label>
-
+                <button class="submit-button" type="submit">
+                    Submit
+                </button>
             </form>
         </div>
 
@@ -584,8 +611,8 @@
                         </a>
                     </li>
                     <li>
-                        <a>
-                            Contact
+                        <a id="footer-about">
+                            About Me
                         </a>
                     </li>
                 </ul>
@@ -776,3 +803,7 @@
 </div>
 
 </html>
+
+
+
+

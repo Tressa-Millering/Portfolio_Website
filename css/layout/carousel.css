@@ -7,6 +7,8 @@
 
     position: relative;
 
+    transition: opacity 0s;
+
 }
 
 .carousel-images {
@@ -17,41 +19,44 @@
 
 }
 
-.carousel-images *{
-
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.carousel-item{
     flex: 0 0 100%;
-}
+    height: 100%;
 
+    object-fit: cover;
+}
 
 .carousel-controls {
     height: 100%;
     width: 100%;
+
+    opacity: 0;
+
+    transition: opacity 0s !important;
+
 }
 
 
-
-.carousel-controls button:hover,
-.carousel-controls button:hover ~ button {
+.carousel-controls > button:hover {
     opacity: 0.5;
+
 }
 
 
 .carousel-next, .carousel-prev {
-    background-color: darkgray;
-    opacity: 0.3;
+    background-color: rgba(169, 169, 169, 0.3);
+
     border: none;
     position: absolute;
     height: 33%;
-    top: 33%;
 
+    top: 33%;
+    z-index: 2;
 
 }
 
 .carousel-next:hover, .carousel-prev:hover {
-    opacity: 1 !important;
+    background-color: darkgray !important;
 }
 
 .carousel-next {
@@ -63,6 +68,37 @@
 
 .carousel-prev {
     right: 0;
+}
+
+.carousel-selectors {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.carousel-selectors button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    margin: 0 2px;
+    opacity: 0.5;
+}
+
+.carousel-selectors button[aria-selected="true"] {
+    opacity: 1;
+}
+
+.carousel-selectors button:hover {
+    opacity: 1;
 }
 
 
