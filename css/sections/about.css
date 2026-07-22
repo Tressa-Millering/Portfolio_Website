@@ -15,6 +15,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+
 }
 
 .indoor-headshot {
@@ -31,13 +33,19 @@
     flex-basis: 50%;
 }
 
-.about-text {
-    font-size: 1.17em;
-    padding-right: 15px;
-    margin-right: 10%;
-
+.about-title-one {
+    font-size: 5vmin;
 }
 
+.about-title-two {
+    font-size: 3vmin;
+}
+
+.about-text {
+    font-size: 1.3vw;
+    padding-right: 15px;
+    margin-right: 10%;
+}
 
 .about-links {
     display: flex;
@@ -89,3 +97,42 @@
 }
 
 
+
+
+@media (max-width: 800px) {
+    .about-wrap {
+        flex-direction: column-reverse;
+    }
+
+    .about-content:first-of-type {
+        margin-top: 5%;
+    }
+
+    .about-content {
+
+        & * {
+            text-align: center;
+        }
+        & hr {
+            width: 90%;
+            margin-left: 15%;
+        }
+        & h1, & h2 {
+            margin: 0;
+        }
+
+    }
+
+    .about-text {
+        text-align: center;
+        padding: 0 10%;
+        margin: 0;
+        font-size: 3vmin;
+    }
+
+    .about-text > ul * {
+        text-align: center;
+        list-style-position: inside;
+    }
+
+}

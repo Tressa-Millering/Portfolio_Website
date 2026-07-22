@@ -77,19 +77,22 @@
 
 @media (pointer: coarse) or (max-width: 700px) {
     .navbar {
-        align-items: center;
-        justify-content: center;
+        opacity: 0;
     }
+    /*.navbar {*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+    /*}*/
 
-    .link-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    /*.link-list {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*}*/
 
-    .link-list a:hover {
-        color:pink;
-    }
+    /*.link-list a:hover {*/
+    /*    color:pink;*/
+    /*}*/
 
 }
