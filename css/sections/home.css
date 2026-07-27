@@ -77,4 +77,10 @@
 
 }
 
+@media (max-width: 380px) {
+    .splash {
+        background-size: cover;
+    }
+}
+
 

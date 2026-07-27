@@ -1,14 +1,14 @@
 export default function initScrollIntoView () {
-    const items = document.querySelectorAll('.exp-item');
+    const items = document.querySelectorAll(".exp-content");
 
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
-                entry.target.classList.toggle('is-active', entry.isIntersecting);
+                entry.target.parentElement.classList.toggle('is-active', entry.isIntersecting);
             });
         },
         {
-            threshold: 0.9
+            threshold: 0.8
         }
     );
 

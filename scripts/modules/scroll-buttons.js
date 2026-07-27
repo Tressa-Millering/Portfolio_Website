@@ -18,7 +18,4 @@ export default function initScrollButtons() {
         })
     })
 
-    document.getElementById('footer-about').addEventListener('click', () => {
-        sections[1].scrollIntoView();
-    })
 }

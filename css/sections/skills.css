@@ -54,6 +54,10 @@
     max-height: 120px;
 }
 
+.skill-card h2 {
+    text-align: center;
+}
+
 .skill-card p {
     margin: 1% 10% 5% 10%;
     text-align: center;
@@ -63,6 +67,5 @@
     position: relative;
     right: 9px;
 }
-
 
 
