@@ -33,6 +33,24 @@
             </li>
         </ul>
     </nav>
+    <nav class="res-nav">
+        <div class="res-nav-container">
+            <label class="res-nav-open" for="burger">
+                <input type="checkbox" id="burger" autocomplete="off">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="res-nav-links">
+                <button>Home</button>
+                <button>About</button>
+                <button>Skills</button>
+                <button>Projects</button>
+                <button>Experience</button>
+                <button>Contact</button>
+            </div>
+        </div>
+    </nav>
 
     <!-- 1-home -->
     <section class="splash">
@@ -119,7 +137,7 @@
 
     <!-- 3-skills -->
     <section class="skills">
-        <h1 class="skills-title">
+        <h1 class="section-title">
             Skills
         </h1>
 
@@ -240,42 +258,42 @@
 
     <!-- 4-projects -->
     <section class="projects">
-        <h1>
+        <h1 class="section-title">
             Projects
         </h1>
-        <p>
+        <p class="section-subtitle">
             Click a project to expand!
         </p>
 
         <div class="proj-card-deck">
 
             <!-- Chip8 -->
-            <div class="proj-card">
-                <div class="proj-card-inner">
+            <button class="proj-card">
+                <span class="proj-card-inner">
 
-                    <div class="proj-card-front">
+                    <span class="proj-card-front">
                         <img class="proj-card-img" src="./assets/projects/chip8-screenshot.png" alt="c++"/>
-                        <div class="proj-card-front-text">
-                            <p class="proj-card-title">
+                        <span class="proj-card-front-text">
+                            <span class="proj-card-title">
                                 Chip8 Interpreter
-                            </p>
-                            <p class="proj-card-description">
+                            </span>
+                            <span class="proj-card-description">
                                 A command line interpreter for the Chip8 Language.
-                            </p>
-                        </div>
-                    </div>
+                            </span>
+                        </span>
+                    </span>
 
-                    <div class="proj-card-back">
+                    <span class="proj-card-back">
 
-                        <p class="proj-card-title-back">
+                        <span class="proj-card-title-back">
                             Chip8 Interpreter
-                        </p>
-                        <div class="proj-card-keywords">
+                        </span>
+                        <span class="proj-card-keywords">
                             <span>C++</span>
                             <span>SFML</span>
-                        </div>
+                        </span>
 
-                        <div class="proj-card-description">
+                        <span class="proj-card-description">
                             This is a command line interpreter for the Chip8, a
                             programming language developed for early video game
                             development. It is written in C++, using SFML 3.0.2
@@ -289,11 +307,11 @@
                                 GitHub
                             </a>
                             </span>
-                        </div>
-                    </div>
+                        </span>
+                    </span>
 
-                </div>
-            </div>
+                </span>
+            </button>
 
             <!-- Paint Blob Sim -->
             <button class="proj-card">
@@ -406,8 +424,8 @@
                                 Wandering in the Woods
                             </span>
                             <span class="proj-card-description">
-                                This program simulates two strangers moving randomly
-                                to determine if and when they meet.
+                                A simulation of two strangers moving randomly
+                                until they meet.
                             </span>
                         </span>
                     </span>
@@ -461,7 +479,7 @@
 
     <!-- 5-experience -->
     <section class="experience">
-        <h1>
+        <h1 class="section-title">
             Experience
         </h1>
         <hr/>
@@ -554,14 +572,16 @@
 
     <!-- 6-contact -->
     <section class="contact">
-        <h1>
+        <h1 class="section-title">
             Contact
         </h1>
         <div>
-            Email: tressamillering@gmail.com <br>
-            Phone: (636) 495-3195 <br>
-            <br>
-            <span>Or contact me with the form below!</span>
+            <div class="section-subtitle">
+                Email: <a href="mailto:tressamillering@gmail.com">tressamillering@gmail.com</a> <br>
+                Phone: <a href="tel:+16364953195">(636) 495-3195</a> <br>
+                <br>
+                <span>...or contact me with the form below!</span>
+            </div>
 
 
                   <!--action="https://formspree.io/f/xpqvpwej">-->

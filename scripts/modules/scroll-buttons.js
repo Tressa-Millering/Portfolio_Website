@@ -3,6 +3,9 @@ export default function initScrollButtons() {
 
     const buttons = document.querySelectorAll('.scroll-link');
 
+    const resnavLinks = document.querySelector('.res-nav-links');
+
+
     document.querySelector('.scroll-to-top').addEventListener('click', () => {
         sections[0].scrollIntoView();
     })
@@ -17,5 +20,12 @@ export default function initScrollButtons() {
             sections[index].scrollIntoView();
         })
     })
+
+    for (let i = 0; i < sections.length; i++) {
+        resnavLinks.children[i].addEventListener('click', () => {
+            sections[i].scrollIntoView();
+        })
+    }
+
 
 }

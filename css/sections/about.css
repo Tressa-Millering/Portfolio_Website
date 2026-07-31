@@ -8,6 +8,8 @@
     background-color: #FFFFFF;
 
     color: Black;
+    font-family: Ebrima,Verdana, "Segoe UI", sans-serif;
+
 }
 
 .about-wrap {
@@ -88,6 +90,7 @@
 .about-content * {
     width: 100%;
     text-align: left;
+
 }
 
 

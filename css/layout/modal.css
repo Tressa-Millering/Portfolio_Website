@@ -36,13 +36,17 @@
 
 
 
-.show{
+.show {
     top: 3%;
     opacity: 1;
 }
 
 .exit {
     top: 100%;
+}
+
+.hide-res-nav {
+    margin-right: -250px !important;
 }
 
 .close-modal {
@@ -68,5 +72,13 @@
 .animation-lock {
     transform: rotateY(180deg) !important;
 }
+
+@media (pointer: coarse) {
+    .animation-lock {
+        transform: none !important;
+    }
+}
+
+
 
 

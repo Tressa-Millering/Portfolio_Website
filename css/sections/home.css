@@ -24,6 +24,9 @@
     align-items: center;
     text-align: center;
     padding-top: 10vh;
+
+    font-family: Ebrima, Verdana, "Segoe UI", sans-serif;
+
 }
 
 .content-wrapper * {
@@ -77,7 +80,7 @@
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
     .splash {
         background-size: cover;
     }

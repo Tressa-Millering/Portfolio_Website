@@ -61,11 +61,10 @@ body {
     background-color: #000000;
 }
 
-section {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 3rem 0;
-}
+
 html {
     scroll-behavior: smooth;
+    font-family: "Ebrima", "Segoe UI", sans-serif;
+
 }
+

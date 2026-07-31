@@ -8,12 +8,6 @@
     background-color: #ffd600;
 }
 
-.skills-title {
-    text-decoration: underline;
-    font-size: 2.3rem;
-    margin-bottom: 1rem;
-}
-
 
 .skills-wrap{
     display: flex;
@@ -33,6 +27,12 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    font-family: Lexend, Ebrima, Verdana, "Segoe UI", sans-serif;
+    font-weight: 250;
+}
+
+.skill-card b {
+    font-weight: 600;
 }
 
 .skill-img-wrap {

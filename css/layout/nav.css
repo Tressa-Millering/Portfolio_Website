@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Momo+Trust+Display&display=swap');
 
 .navbar {
     display: flex;
@@ -18,10 +17,11 @@
     justify-content: center;
 
     top: 0;
-    z-index: 10;
     position: fixed;
+    z-index: 10;
 
     transition: all 1s ease;
+
 
 }
 
@@ -34,13 +34,23 @@
     margin-top: 0;
     padding-top: 0;
 }
+
 .navbar.scrolled * {
     margin-top: 0;
     padding-top: 3px;
 }
 
+.navbar .link-list li:first-child {
+    margin-right: auto;
+    margin-left: 5%;
+
+    font-family: "Momo Trust Display", Lexend,"Trebuchet MS",  sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
 .link-list {
-    /* border: 1px solid aqua;  /* Debug */
     display: flex;
     padding: 0;
     width: 100%;
@@ -48,22 +58,11 @@
     justify-content: flex-end;
 }
 
-.navbar .link-list li:first-child {
-    margin-right: auto;
-    margin-left: 5%;
-
-    font-family: "Momo Trust Display", Lexend, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-
-}
-
 .link-list li {
     margin: 1% 2.5% 1% 2.5%;
     list-style: none;
 
-    font-family: Lexend, sans-serif;
+    font-family: Lexend, "Trebuchet MS", Verdana, sans-serif;
     font-style: normal;
 
 }
@@ -74,25 +73,128 @@
 }
 
 
+.res-nav {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 200;
+    transition: margin 0.5s ease;
+
+}
+
+.res-nav div {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+.res-nav-links *{
+    transition: margin 0.5s ease;
+}
+
+.res-nav-active button {
+    margin: 10px 0 !important;
+}
+
+.res-nav-active {
+    & button:hover, & button:focus {
+        margin: 10px 15px !important;
+        border: brown 3px solid;
+        color: black;
+        outline: none;
+    }
+}
+
+.res-nav-links button {
+    height: 12vw;
+    width: 25vw;
+
+    border-radius: 10px;
+    border: solid 2px #855305;
+    background-color: #FCCA4F;
+
+    position: relative;
+    cursor: pointer;
+    display: block;
+
+    margin: 10px -250px;
+    color: #855305;
+
+    font-family: Lexend, sans-serif;
+
+}
+
+.res-nav-open {
+    height: 12vw;
+    width: 12vw;
+
+    border-radius: 10px;
+    border: solid 2px #855305;
+    background-color: #FCCA4F;
+
+    position: relative;
+    cursor: pointer;
+    display: block;
+
+}
+
+.res-nav-open input {
+    display: none;
+    height: 10vw;
+    width: 10vw;
+}
+
+.res-nav-open span {
+    display: block;
+    height: 4px;
+    width: 80%;
+    background: black;
+    border-radius: 9px;
+    transition: .25s ease-in-out;
+
+    position: absolute;
+    transform-origin: left;
+
+    left: 10%;
+    top: 5vw;
+}
+
+.res-nav-open span:first-of-type {
+    top: 2vw;
+}
+
+.res-nav-open span:last-of-type {
+    top: 8vw;
+}
+
+.res-nav-open input:checked ~ span:nth-of-type(1) {
+    background-color: black;
+    transform:  translateY(-1vw) translateX(2px) rotate(45deg);
+    width: 11.5vw;
+}
+
+.res-nav-open input:checked ~ span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.res-nav-open input:checked ~ span:nth-of-type(3) {
+    transform: translateY(1vw) translateX(2px) rotate(-45deg);
+    width: 11.5vw;
+}
+
 
 @media (pointer: coarse) or (max-width: 700px) {
     .navbar {
         opacity: 0;
     }
-    /*.navbar {*/
-    /*    align-items: center;*/
-    /*    justify-content: center;*/
-    /*}*/
 
-    /*.link-list {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*}*/
-
-    /*.link-list a:hover {*/
-    /*    color:pink;*/
-    /*}*/
+    .res-nav {
+        display: block;
+    }
 
 }

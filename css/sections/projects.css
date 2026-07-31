@@ -8,6 +8,12 @@
 
 }
 
+.projects .section-subtitle {
+    color: red;
+    -webkit-text-stroke: 1px black;
+
+}
+
 .proj-card-deck{
     display: flex;
     flex-direction: row;
@@ -85,19 +91,25 @@
 
 
 
-
 .proj-card-front-text {
     width: 100%;
     margin: 2% 5%;
+    padding-right: 8%;
     text-align: left;
 }
 
 .proj-card-title {
     margin-bottom: 0;
-    font-weight: bold;
     font-size: 1.5rem;
+    font-family: Lexend,Lato, "Ebrima", "Segoe UI", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
 }
 
+.proj-card-description {
+    font-family: Lexend, "Ebrima", "Segoe UI", sans-serif;
+    font-weight: 350;
+}
 
 .proj-card-keywords {
     margin-bottom: 10px;
@@ -131,8 +143,10 @@
 
 .proj-card-title-back {
     margin-bottom: 10px;
-    font-weight: bold;
     font-size: 2rem;
+    font-family: Lexend,Lato, "Ebrima", "Segoe UI", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
 }
 
 
@@ -143,5 +157,14 @@
     margin: 5%;
 }
 
+@media (pointer: coarse) {
 
+    .proj-card:hover *{
+        transform: none !important;
+        box-shadow: none !important;
+    }
 
+    .proj-card-back {
+        opacity: 0 !important;
+    }
+}

@@ -9,6 +9,8 @@ export default function initModals() {
 
     const closeModalButtons = document.querySelectorAll('.close-modal');
 
+    const resnav = document.querySelector('.res-nav');
+
     let inModal = false;
 
     let currCard = null;
@@ -17,11 +19,13 @@ export default function initModals() {
 
 
     cards.forEach((card, index) => {
-        card.addEventListener('click', async () => {
+        card.addEventListener('click',  () => {
             if (!inModal) {
                 currCard = index;
                 currModal = index;
                 inModal = true;
+
+                resnav.classList.toggle('hide-res-nav');
 
                 cards[currCard].children[0].classList.add('animation-lock');
                 cards[currCard].offsetHeight; // Trigger a reflow, flushing the CSS changes
@@ -50,6 +54,8 @@ export default function initModals() {
     function closeModal() {
         modals[currModal].classList.remove('show')
         modals[currModal].classList.add('exit')
+        resnav.classList.toggle('hide-res-nav');
+
 
         modals[currModal].addEventListener('transitionend', function handler(e) {
             if (e.target !== modals[currModal]) return;

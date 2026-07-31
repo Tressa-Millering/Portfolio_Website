@@ -14,9 +14,17 @@ export default function initCarousel() {
         }
     })
 
-    window.addEventListener('resize', () => {
-        carousels.forEach(carousel => { updateWidths(carousel) })
-    })
+
+    let debounce = (fn, t) => {
+        let timeout;
+        return (...args) => {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => fn(...args), t)
+        }
+    };
+    const debouncedCarousel = debounce(() => {carousels.forEach(carousel => {updateWidths(carousel)})}, 200);
+
+    window.addEventListener('resize', debouncedCarousel)
 
 
     carousels.forEach((carousel, index) => {
