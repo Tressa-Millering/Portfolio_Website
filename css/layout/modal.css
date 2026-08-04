@@ -27,15 +27,6 @@
 
 }
 
-.top-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-
-
 
 .show {
     top: 3%;
@@ -52,7 +43,12 @@
 
 .close-modal {
 
+    position: absolute;
+    top: 15px;
+    right: 0;
+
     margin-right: 2%;
+
     width: 50px;
     height: 50px;
 
@@ -77,6 +73,12 @@
 @media (pointer: coarse) {
     .animation-lock {
         transform: none !important;
+    }
+}
+
+@media(max-width: 600px) {
+    .modal .proj-card-title-back {
+        margin-top: 70px;
     }
 }
 

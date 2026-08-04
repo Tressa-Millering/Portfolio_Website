@@ -80,6 +80,7 @@
     min-height: 50px;
     min-width: 130px;
 
+    object-fit: cover;
 
     outline: none;
     border-radius: 10px;
@@ -93,6 +94,10 @@
 
     transition: all 0.1s ease-in-out;
 
+    & img {
+        margin: auto;
+        height: 50%;
+    }
 }
 
 .submit-button:hover {

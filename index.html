@@ -292,6 +292,7 @@
             Click a project to expand!
         </p>
 
+
         <div class="proj-card-deck">
 
             <!-- Chip8 -->
@@ -458,49 +459,50 @@
                             </span>
                         </span>
                     </span>
-                </span>
 
-                <span  tabindex="-1" class="proj-card-back">
-                    <span tabindex="0" class="proj-card-back-scroll">
-                        <span class="proj-card-title-back">
-                            Wandering in the Woods
-                        </span>
-                        <span class="proj-card-keywords">
-                            <span>Python</span>
-                            <span>Numpy</span>
-                            <span>MatPlotLib</span>
-                        </span>
-                        <span class="proj-card-description">
-                            The program first takes validated inputs for
-                            N (grid size, NxN), T (ticks per simulation),
-                            and R (number of simulations).
-                            It then runs R simulations. This entails simulating
-                            a grid with two people starting on opposite ends,
-                            each moving in a random direction each tick. If they
-                            were to move off the grid, they simply don't move
-                            at all. The simulation ends when, after moving, the
-                            two people are at the same grid location; alternatively,
-                            it will end when this loop has iterated T times
-                            without a meeting. Each simulation that ends in a
-                            meeting records how many ticks it took to get there
-                            and the coordinates of the meeting location.
-                            Finally, the program writes the maximum, minimum,
-                            and mean number of ticks over all simulations, a
-                            histogram of ticks per simulation, and a heat map
-                            of meeting locations. These results are then saved
-                            to a timestamped output file.
 
-                            <img class="proj-card-img-back" src="/assets/projects/Heatmap.png" alt="Heatmap"/>
-                            <img class="proj-card-img-back" src="./assets/projects/Histogram.png" alt="Histogram"/>
+                    <span  tabindex="-1" class="proj-card-back">
+                        <span tabindex="0" class="proj-card-back-scroll">
+                            <span class="proj-card-title-back">
+                                Wandering in the Woods
+                            </span>
+                            <span class="proj-card-keywords">
+                                <span>Python</span>
+                                <span>Numpy</span>
+                                <span>MatPlotLib</span>
+                            </span>
+                            <span class="proj-card-description">
+                                The program first takes validated inputs for
+                                N (grid size, NxN), T (ticks per simulation),
+                                and R (number of simulations).
+                                It then runs R simulations. This entails simulating
+                                a grid with two people starting on opposite ends,
+                                each moving in a random direction each tick. If they
+                                were to move off the grid, they simply don't move
+                                at all. The simulation ends when, after moving, the
+                                two people are at the same grid location; alternatively,
+                                it will end when this loop has iterated T times
+                                without a meeting. Each simulation that ends in a
+                                meeting records how many ticks it took to get there
+                                and the coordinates of the meeting location.
+                                Finally, the program writes the maximum, minimum,
+                                and mean number of ticks over all simulations, a
+                                histogram of ticks per simulation, and a heat map
+                                of meeting locations. These results are then saved
+                                to a timestamped output file.
 
-                            <span>
-                            View this project on
-                            <a  tabindex="-1" href="https://github.com/Tressa-Millering/Wandering_In_The_Woods" class="proj-card-link">
-                                GitHub
-                            </a>
+                                <img class="proj-card-img-back" src="/assets/projects/Heatmap.png" alt="Heatmap"/>
+                                <img class="proj-card-img-back" src="./assets/projects/Histogram.png" alt="Histogram"/>
+
+                                <span>
+                                View this project on
+                                <a  tabindex="-1" href="https://github.com/Tressa-Millering/Wandering_In_The_Woods" class="proj-card-link">
+                                    GitHub
+                                </a>
+                                </span>
                             </span>
                         </span>
-                    </span>
+                </span>
                 </span>
             </button>
 
@@ -651,7 +653,7 @@
                 </div>
 
                 <button class="submit-button" type="submit">
-                    Submit
+                    <img src="./assets/navigation/submit-button.svg" alt="submit"/>
                 </button>
             </form>
         </div>
@@ -699,16 +701,13 @@
 
 <!--- Chip8 Modal --->
 <div class="modal">
-    <div class="top-line">
-        <div class="close-modal"></div>
-        <p class="proj-card-title-back">
-            Chip8 Interpreter
-        </p>
+    <p class="proj-card-title-back">
+        Chip8 Interpreter
+    </p>
 
-        <button class="close-modal">
-            <img src="./assets/navigation/close-bold-svgrepo-com.svg" alt="X"/>
-        </button>
-    </div>
+    <button class="close-modal">
+        <img src="./assets/navigation/close-bold-svgrepo-com.svg" alt="X"/>
+    </button>
 
     <div class="proj-card-keywords">
         <span>C++</span>
@@ -736,16 +735,14 @@
 <!--- Paint Blob Sim --->
 <div class="modal">
 
-    <div class="top-line">
-        <div class="close-modal"></div>
-        <p class="proj-card-title-back">
-            Paint Blob Simulation
-        </p>
+    <p class="proj-card-title-back">
+        Paint Blob Simulation
+    </p>
 
-        <button class="close-modal">
-            <img src="./assets/navigation/close-bold-svgrepo-com.svg" alt="X"/>
-        </button>
-    </div>
+    <button class="close-modal">
+        <img src="./assets/navigation/close-bold-svgrepo-com.svg" alt="X"/>
+    </button>
+
 
 
     <div class="proj-card-keywords">
@@ -775,16 +772,13 @@
 
 <!--- Lexicographical Analyzer --->
 <div class="modal">
-    <div class="top-line">
-        <div class="close-modal"></div>
-        <p class="proj-card-title-back">
-            Lexicographical Analyzer
-        </p>
+    <p class="proj-card-title-back">
+        Lexicographical Analyzer
+    </p>
 
-        <button class="close-modal">
-            <img src="./assets/navigation/close-bold-svgrepo-com.svg" alt="X"/>
-        </button>
-    </div>
+    <button class="close-modal">
+        <img src="./assets/navigation/close-bold-svgrepo-com.svg" alt="X"/>
+    </button>
 
     <div class="proj-card-keywords">
         <span>C++</span>
@@ -819,16 +813,13 @@
 
 <!-- Wandering in the Woods -->
 <div class="modal">
-    <div class="top-line">
-        <div class="close-modal"></div>
-        <p class="proj-card-title-back">
-            Wandering in the Woods
-        </p>
+    <p class="proj-card-title-back">
+        Wandering in the Woods
+    </p>
 
-        <button class="close-modal">
-            <img src="./assets/navigation/close-bold-svgrepo-com.svg" alt="X"/>
-        </button>
-    </div>
+    <button class="close-modal">
+        <img src="./assets/navigation/close-bold-svgrepo-com.svg" alt="X"/>
+    </button>
 
     <span class="proj-card-keywords">
         <span>Python</span>

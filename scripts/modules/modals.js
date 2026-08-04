@@ -17,7 +17,6 @@ export default function initModals() {
 
     let currModal = null;
 
-
     cards.forEach((card, index) => {
         card.addEventListener('click',  () => {
             if (!inModal) {
@@ -36,6 +35,12 @@ export default function initModals() {
                 modals[currModal].classList.add('show');
 
             }
+        })
+        card.addEventListener('mouseleave', () => {
+            card.addEventListener('transitionend', function handler() {
+                card.children[0].children[1].children[0].scrollTo(0,0)
+                card.removeEventListener('transitionend', handler)
+            })
         })
     })
 

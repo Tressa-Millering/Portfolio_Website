@@ -45,11 +45,12 @@
 }
 
 .resume-link {
+    font-family: "Momo Trust Display", Lexend, "Ebrima", "Segoe UI", sans-serif;
     position: relative;
     padding: 2% 3%;
     width: fit-content;
 
-    font-size: clamp(20px, 1.9vw, 1.9vw);
+    font-size: clamp(20px, 1.5vw, 1.5vw);
     text-decoration: underline;
     color: black;
 
