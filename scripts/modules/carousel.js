@@ -1,6 +1,5 @@
 export default function initCarousel() {
-
-    let carousels = [];
+    const carousels = [];
 
     document.querySelectorAll('.carousel').forEach((carousel, index) => {
         carousels[index] = {
@@ -8,27 +7,25 @@ export default function initCarousel() {
             currIndex: 0,
             currPos: 0,
             length: carousel.children[0].childElementCount,
-            nextButton: carousel.querySelector('.carousel-next'),
             prevButton: carousel.querySelector('.carousel-prev'),
+            nextButton: carousel.querySelector('.carousel-next'),
             selectors: carousel.children[1].children[2].querySelectorAll('button')
         }
     })
 
 
-    let debounce = (fn, t) => {
+    const debounce = (fn, t) => {
         let timeout;
         return (...args) => {
             clearTimeout(timeout);
             timeout = setTimeout(() => fn(...args), t)
         }
     };
-    const debouncedCarousel = debounce(() => {carousels.forEach(carousel => {updateWidths(carousel)})}, 200);
-
-    window.addEventListener('resize', debouncedCarousel)
-
+    const resizeDebounce = debounce(() => {carousels.forEach(carousel => {updateWidths(carousel)})}, 200);
+    window.addEventListener('resize', resizeDebounce)
 
     carousels.forEach((carousel, index) => {
-        carousel.prevButton.addEventListener('click', () => {
+        carousel.nextButton.addEventListener('click', () => {
             carousel.currIndex++;
             if (carousel.currIndex >= carousel.length) {
                 carousel.currIndex = 0;
@@ -38,9 +35,11 @@ export default function initCarousel() {
             }
             setSelectors(carousel, carousel.selectors[carousel.currIndex]);
             carousel.content.style.transform = `translateX(-${carousel.currPos}px)`;
+
         })
 
-        carousel.nextButton.addEventListener('click', () => {
+        carousel.prevButton.addEventListener('click', () => {
+
             carousel.currIndex--;
             if (carousel.currIndex < 0) {
                 carousel.currIndex = carousel.length - 1;
@@ -50,6 +49,7 @@ export default function initCarousel() {
             }
             setSelectors(carousel, carousel.selectors[carousel.currIndex])
             carousels[index].content.style.transform = `translateX(-${carousels[index].currPos}px)`;
+
         })
 
         carousel.selectors.forEach((selector, index) => {

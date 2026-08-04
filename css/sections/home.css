@@ -13,6 +13,7 @@
 
 
     color: white;
+
 }
 
 .content-wrapper {
@@ -34,21 +35,44 @@
 
 }
 
-.outdoor-headshot {
-    max-width: 300px;
+.headshot-wrap {
+    position: relative;
+    width: min-content;
+    height: min-content;
+}
+
+.headshot-wrap:after {
+    content: "";
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
+    position: absolute;
+    top: 0; left: 0;
+    box-shadow: inset 0 0 50px black;
     border: 10px solid darkgoldenrod;
 }
 
+
+.outdoor-headshot {
+    max-width: 300px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+
+
+
 .enter-button {
-    transition: 0.2s ease;
     border-radius: 25px;
-    border: gray solid 2px;
+    border: #855305 solid 2px;
     width: 60px;
     max-height: 60px;
     min-height: 60px;
-    box-shadow: 0 0 7px 5px #333333;
+    box-shadow: 0 0 7px 0 #333333,
+                inset 0 0 6px #855305;
     margin-bottom: 5%;
+    background-color: #FCCA4F;
+
 
 }
 .enter-button img {
@@ -56,15 +80,17 @@
     margin: 5px auto auto auto;
     height: 35px;
     animation: bounce 1s infinite;
+    transition: transform 1s !important;
 }
 
 .enter-button:hover {
+    transition: transform 0.2s ease, border 0.1s ease;
 
-    transition: 0.2s ease;
-    background-color: #DDDDDD;
-    border: solid darkgray 4px;
+    background-color: #FCCA4F;
+    border: solid #855305 4px;
 
     transform: translateY(-5px);
+
 }
 
 .enter-button:hover img {

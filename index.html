@@ -14,40 +14,61 @@
     <nav class="navbar">
         <ul class="link-list">
             <li>
-                <a class="home scroll-link"><u>Tressa Millering</u></a>
+                <a class="home scroll-link" tabindex="0">
+                    <u>Tressa Millering</u>
+                </a>
             </li>
             <li>
-                <a class="scroll-link">About</a>
+                <a class="scroll-link" tabindex="0">
+                    About
+                </a>
             </li>
             <li>
-                <a class="scroll-link">Skills</a>
+                <a class="scroll-link" tabindex="0">
+                    Skills
+                </a>
             </li>
             <li>
-                <a class="scroll-link">Projects</a>
+                <a class="scroll-link" tabindex="0">
+                    Projects
+                </a>
             </li>
             <li>
-                <a class="scroll-link">Experience</a>
+                <a class="scroll-link" tabindex="0">
+                    Experience
+                </a>
             </li>
             <li>
-                <a class="scroll-link">Contact</a>
+                <a class="scroll-link" tabindex="0">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a class="resume-link-nav" href="./assets/Millering%20-%20Resume%20-%202026.pdf">
+                    View Resume↗
+                </a>
             </li>
         </ul>
     </nav>
-    <nav class="res-nav">
-        <div class="res-nav-container">
-            <label class="res-nav-open" for="burger">
+    <nav class="resnav">
+        <div class="resnav-container">
+            <label tabindex="0" class="resnav-open" for="burger">
                 <input type="checkbox" id="burger" autocomplete="off">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-            <div class="res-nav-links">
-                <button>Home</button>
-                <button>About</button>
-                <button>Skills</button>
-                <button>Projects</button>
-                <button>Experience</button>
-                <button>Contact</button>
+            <div class="resnav-links">
+                <a tabindex="0">Home</a>
+                <a tabindex="0">About</a>
+                <a tabindex="0">Skills</a>
+                <a tabindex="0">Projects</a>
+                <a tabindex="0">Experience</a>
+                <a tabindex="0">Contact</a>
+                <a href="./assets/Millering%20-%20Resume%20-%202026.pdf">
+                    View Resume↗
+                </a>
+
             </div>
         </div>
     </nav>
@@ -56,7 +77,10 @@
     <section class="splash">
         <div class="content-wrapper">
 
-            <img class="outdoor-headshot" src="./assets/misc/OutdoorHeadshot.jpeg" alt="outdoor-headshot"/>
+            <div class="headshot-wrap">
+                <img class="outdoor-headshot" src="./assets/misc/OutdoorHeadshot.jpeg" alt="outdoor-headshot"/>
+            </div>
+
 
             <h1>
                 Tressa Millering
@@ -80,13 +104,16 @@
     <section class="about">
         <div class="about-wrap">
             <div class="about-content">
-                <img class="indoor-headshot" src="./assets/misc/IndoorHeadshot.jpeg" alt="Indoor Headshot Image"/>
+                <div class="indoor-headshot-wrap">
+                    <img class="indoor-headshot" src="./assets/misc/IndoorHeadshot.jpeg" alt="Indoor Headshot Image"/>
+                </div>
+
                 <div class="about-links">
 
-                    <a href="https://www.linkedin.com/in/tressa-millering">
+                    <a tabindex="-1" href="https://www.linkedin.com/in/tressa-millering">
                         <button class="linkedin-button">LinkedIn</button>
                     </a>
-                    <a href="https://github.com/Tressa-Millering/">
+                    <a tabindex="-1" href="https://github.com/Tressa-Millering/">
                         <button class="github-button">GitHub</button>
                     </a>
 
@@ -269,9 +296,9 @@
 
             <!-- Chip8 -->
             <button class="proj-card">
-                <span class="proj-card-inner">
+                <span tabindex="-1" class="proj-card-inner">
 
-                    <span class="proj-card-front">
+                    <span tabindex="-1"  class="proj-card-front">
                         <img class="proj-card-img" src="./assets/projects/chip8-screenshot.png" alt="c++"/>
                         <span class="proj-card-front-text">
                             <span class="proj-card-title">
@@ -283,41 +310,38 @@
                         </span>
                     </span>
 
-                    <span class="proj-card-back">
+                    <span tabindex="-1" class="proj-card-back">
+                        <span  tabindex="0" class="proj-card-back-scroll">  <!-- new wrapper -->
 
-                        <span class="proj-card-title-back">
-                            Chip8 Interpreter
-                        </span>
-                        <span class="proj-card-keywords">
-                            <span>C++</span>
-                            <span>SFML</span>
-                        </span>
+                            <span class="proj-card-title-back">
+                                Chip8 Interpreter
+                            </span>
+                            <span class="proj-card-keywords">
+                                <span>C++</span>
+                                <span>SFML</span>
+                            </span>
 
-                        <span class="proj-card-description">
-                            This is a command line interpreter for the Chip8, a
-                            programming language developed for early video game
-                            development. It is written in C++, using SFML 3.0.2
-                            for the screen and user interaction.
-
-                            <img class="proj-card-img-back" src="./assets/projects/chip8-screenshot.png" alt="c++"/>
-
-                            <span>
-                            View this project on
-                            <a href="https://github.com/Tressa-Millering/Chip8_Interpreter" class="proj-card-link">
-                                GitHub
-                            </a>
+                            <span class="proj-card-description">
+                                This is a command line interpreter for the Chip8,
+                                a programming language developed for early video
+                                game development. It is written in C++, using SFML
+                                3.0.2 for the screen and user interaction.
+                                <img class="proj-card-img-back" src="./assets/projects/chip8-screenshot.png" alt="c++"/>
+                                <span>
+                                View this project on
+                                <a tabindex="-1" href="https://github.com/Tressa-Millering/Chip8_Interpreter">GitHub</a>
+                                </span>
                             </span>
                         </span>
                     </span>
-
                 </span>
             </button>
 
             <!-- Paint Blob Sim -->
             <button class="proj-card">
-                <span class="proj-card-inner">
+                <span  tabindex="-1" class="proj-card-inner">
 
-                    <span class="proj-card-front">
+                    <span  tabindex="-1" class="proj-card-front">
                         <img class="proj-card-img" src="./assets/projects/paintblobthumb.png" alt="c++"/>
                         <span class="proj-card-front-text">
                             <span class="proj-card-title">
@@ -329,29 +353,32 @@
                         </span>
                     </span>
 
-                    <span class="proj-card-back">
-                        <span class="proj-card-title-back">
-                            Paint Blob Simulation
-                        </span>
-                        <span class="proj-card-keywords">
-                            <span>Python</span>
-                            <span>TKinter</span>
-                            <span>MatPlotLib</span>
-                        </span>
-                        <span class="proj-card-description">
-                            This script simulates dropping red, green, or
-                            blue paint blobs onto an empty canvas.
-                            <br>Each tick, a blob is dropped at a random location,
-                            overwriting any prior paint. Multiple experiments
-                            are run using parameters provided by the user.
+                    <span  tabindex="-1" class="proj-card-back">
+                        <span  tabindex="0" class="proj-card-back-scroll">
 
-                            <img class="proj-card-img-back" src="./assets/projects/paintblobfull.png" alt="c++"/>
+                            <span class="proj-card-title-back">
+                                Paint Blob Simulation
+                            </span>
+                            <span class="proj-card-keywords">
+                                <span>Python</span>
+                                <span>TKinter</span>
+                                <span>MatPlotLib</span>
+                            </span>
+                            <span class="proj-card-description">
+                                This script simulates dropping red, green, or
+                                blue paint blobs onto an empty canvas.
+                                <br>Each tick, a blob is dropped at a random location,
+                                overwriting any prior paint. Multiple experiments
+                                are run using parameters provided by the user.
 
-                            <span>
-                            View this project on
-                            <a href="https://github.com/Tressa-Millering/Paint_Blob_Simulation/" class="proj-card-link">
-                                GitHub
-                            </a>
+                                <img class="proj-card-img-back" src="./assets/projects/paintblobfull.png" alt="c++"/>
+
+                                <span>
+                                View this project on
+                                <a  tabindex="-1" href="https://github.com/Tressa-Millering/Paint_Blob_Simulation/" class="proj-card-link">
+                                    GitHub
+                                </a>
+                                </span>
                             </span>
                         </span>
                     </span>
@@ -361,9 +388,9 @@
 
             <!-- Lexicographical Analyzer -->
             <button class="proj-card">
-                <span class="proj-card-inner">
+                <span  tabindex="-1" class="proj-card-inner">
 
-                    <span class="proj-card-front">
+                    <span  tabindex="-1" class="proj-card-front">
                         <img class="proj-card-img" src="./assets/projects/LexicoSS.png" alt="c++"/>
                         <span class="proj-card-front-text">
                             <span class="proj-card-title">
@@ -375,37 +402,39 @@
                         </span>
                     </span>
 
-                    <span class="proj-card-back">
-                        <span class="proj-card-title-back">
-                            Lexicographical Analyzer
-                        </span>
-                        <span class="proj-card-keywords">
-                            <span>C++</span>
-                        </span>
-                        <span class="proj-card-description">
-                            This is a basic lexicographical analyzer built in C++. It takes a file as input and breaks the file down into the following token types:
+                    <span  tabindex="-1" class="proj-card-back">
+                        <span  tabindex="0" class="proj-card-back-scroll">
+                            <span class="proj-card-title-back">
+                                Lexicographical Analyzer
+                            </span>
+                            <span class="proj-card-keywords">
+                                <span>C++</span>
+                            </span>
+                            <span class="proj-card-description">
+                                This is a basic lexicographical analyzer built in C++. It takes a file as input and breaks the file down into the following token types:
 
-                            Identifiers
-                            Keywords
-                            Integer Literals
-                            Float Literals
-                            String Literals
-                            Operators
-                            Delimiters
+                                Identifiers
+                                Keywords
+                                Integer Literals
+                                Float Literals
+                                String Literals
+                                Operators
+                                Delimiters
 
-                            It also handles the end of the file and errors via the tokens:
+                                It also handles the end of the file and errors via the tokens:
 
-                            End of File
-                            Error
+                                End of File
+                                Error
 
 
-                            <img class="proj-card-img-back" src="./assets/projects/LexicoSS.png" alt="c++"/>
+                                <img class="proj-card-img-back" src="./assets/projects/LexicoSS.png" alt="c++"/>
 
-                            <span>
-                            View this project on
-                            <a href="https://github.com/Tressa-Millering/Lexicographical-Analyzer" class="proj-card-link">
-                                GitHub
-                            </a>
+                                <span>
+                                View this project on
+                                <a  tabindex="-1" href="https://github.com/Tressa-Millering/Lexicographical-Analyzer" class="proj-card-link">
+                                    GitHub
+                                </a>
+                                </span>
                             </span>
                         </span>
                     </span>
@@ -415,9 +444,9 @@
 
             <!-- Wandering in the Woods  -->
             <button class="proj-card">
-                <span class="proj-card-inner">
+                <span  tabindex="-1" class="proj-card-inner">
 
-                    <span class="proj-card-front">
+                    <span  tabindex="-1" class="proj-card-front">
                         <img class="proj-card-img" src="./assets/projects/Heatmap.png" alt="Heatmap"/>
                         <span class="proj-card-front-text">
                             <span class="proj-card-title">
@@ -429,8 +458,10 @@
                             </span>
                         </span>
                     </span>
+                </span>
 
-                    <span class="proj-card-back">
+                <span  tabindex="-1" class="proj-card-back">
+                    <span tabindex="0" class="proj-card-back-scroll">
                         <span class="proj-card-title-back">
                             Wandering in the Woods
                         </span>
@@ -464,13 +495,12 @@
 
                             <span>
                             View this project on
-                            <a href="https://github.com/Tressa-Millering/Wandering_In_The_Woods" class="proj-card-link">
+                            <a  tabindex="-1" href="https://github.com/Tressa-Millering/Wandering_In_The_Woods" class="proj-card-link">
                                 GitHub
                             </a>
                             </span>
                         </span>
                     </span>
-
                 </span>
             </button>
 
@@ -482,13 +512,14 @@
         <h1 class="section-title">
             Experience
         </h1>
-        <hr/>
 
         <div class="exp-wrap">
             <!-- Menchie's -->
             <div class="exp-item">
 
-                <img class="exp-image" src="./assets/experience/Menchies.png" alt="Menchies"/>
+                <div class="exp-img-vignette">
+                    <img class="exp-image" src="./assets/experience/menchies.jpg" alt="Menchies"/>
+                </div>
 
                 <div class="exp-content">
                     <p class="exp-title">
@@ -524,11 +555,11 @@
                             <img class="carousel-item" src="./assets/experience/GoodPlaying.webp" alt="James 3"/>
                         </div>
                         <div class="carousel-controls">
-                            <button class="carousel-next">
-                                <img src="./assets/navigation/chevron-right.svg" alt="Prev"/>
-                            </button>
                             <button class="carousel-prev">
                                 <img src="./assets/navigation/chevron-right.svg" alt="Next"/>
+                            </button>
+                            <button class="carousel-next">
+                                <img src="./assets/navigation/chevron-right.svg" alt="Prev"/>
                             </button>
                             <div class="carousel-selectors" role="radiogroup">
                                 <button aria-selected="true"></button>
@@ -558,7 +589,7 @@
                         My primary responsibilities include engineering lighting
                         designs for theatrical productions, programming cue
                         stacks, and coordinating instrument rigging and focus.
-                        To do this, I collaborate directly with directors to
+                        I collaborate directly with directors to
                         translate their creative vision into reality,
                         managing competing technical constraints under hard
                         deadlines in a live performance environment.
@@ -577,10 +608,14 @@
         </h1>
         <div>
             <div class="section-subtitle">
-                Email: <a href="mailto:tressamillering@gmail.com">tressamillering@gmail.com</a> <br>
-                Phone: <a href="tel:+16364953195">(636) 495-3195</a> <br>
+                <em><b>Let's build something together!</b></em>
+                    <br><br>
+                You can contact me by email at:<br>
+                <a href="mailto:tressamillering@gmail.com">TressaMillering@gmail.com</a> <br>
+                <br>...or by phone at:<br>
+                <a href="tel:+16364953195">(636) 495-3195</a> <br>
                 <br>
-                <span>...or contact me with the form below!</span>
+                <span>...or shoot me a message with the form below!</span>
             </div>
 
 
@@ -636,22 +671,19 @@
             </div>
             <div class="about-links spread">
 
-                <a href="https://www.linkedin.com/in/tressa-millering">
+                <a tabindex="-1" href="https://www.linkedin.com/in/tressa-millering">
                     <button class="linkedin-button">LinkedIn</button>
                 </a>
-                <a href="https://github.com/Tressa-Millering/">
+                <a tabindex="-1" href="https://github.com/Tressa-Millering/">
                     <button class="github-button">GitHub</button>
                 </a>
 
             </div>
+
             <div class="footer-jumps">
-                <ul class="link-list">
-                    <li>
-                        <a class="resume-link" href="./assets/Millering%20-%20Resume%20-%202026.pdf">
-                            Resume
-                        </a>
-                    </li>
-                </ul>
+                <a class="resume-link" href="./assets/Millering%20-%20Resume%20-%202026.pdf">
+                    View Resume↗
+                </a>
             </div>
 
     </footer>

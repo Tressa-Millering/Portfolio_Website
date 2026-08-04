@@ -4,15 +4,14 @@
 
 @import "layout/section.css";
 @import "layout/nav.css";
+@import "layout/resnav.css";
 @import "layout/footer.css";
 @import "layout/scroll-to-top.css";
 @import "layout/carousel.css";
 @import "layout/modal.css";
 
 @import "sections/home.css";
-
 @import "sections/about.css";
-
 @import "sections/skills.css";
 @import "sections/projects.css";
 @import "sections/experience.css";

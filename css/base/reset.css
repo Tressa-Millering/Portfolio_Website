@@ -59,12 +59,16 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     background-color: #000000;
+    text-underline-offset: 0.1rem;
+}
+
+*:focus-visible {
+    outline: orange 1px solid !important;
 }
 
 
 html {
     scroll-behavior: smooth;
     font-family: "Ebrima", "Segoe UI", sans-serif;
-
 }
 

@@ -7,8 +7,6 @@
 
     position: relative;
 
-
-
 }
 
 .carousel *{
@@ -31,6 +29,9 @@
 }
 
 .carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
 
@@ -38,15 +39,22 @@
     transition: opacity 0.15s  !important;
 }
 
+.carousel-controls * {
+    z-index: 2;
+}
 
-.carousel-controls > button:hover {
-    background-color: rgba(169, 169, 169, 0.5);
-
-
+.exp-item.is-active .carousel-controls:hover, .carousel-controls:has(*:focus) {
+    opacity: 1;
 }
 
 
-.carousel-next, .carousel-prev {
+.carousel-controls > button:hover {
+    background-color: rgba(169, 169, 169, 0.5);
+}
+
+
+
+.carousel-prev, .carousel-next {
     background-color: rgba(169, 169, 169, 0.3);
 
     border: none;
@@ -54,24 +62,24 @@
     height: 33%;
 
     top: 33%;
-    z-index: 2;
+
 
     transition: background-color 0.25s  !important;
 
 }
 
-.carousel-next:hover, .carousel-prev:hover {
+.carousel-prev:hover, .carousel-next:hover {
     background-color: darkgray !important;
 }
 
-.carousel-next {
+.carousel-prev {
     left: 0;
     & img {
         transform: scaleX(-1);
     }
 }
 
-.carousel-prev {
+.carousel-next {
     right: 0;
 }
 
@@ -93,7 +101,7 @@
 
 .carousel-selectors button {
     width: 10px;
-    height: 10px;
+    height: 11px;
     border-radius: 50%;
 
     margin: 0 2px;

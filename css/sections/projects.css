@@ -9,8 +9,11 @@
 }
 
 .projects .section-subtitle {
-    color: red;
-    -webkit-text-stroke: 1px black;
+    color: darkorange;
+    font-style: italic;
+    font-family:  "Momo Trust Display", Lexend, "Ebrima", "Segoe UI", sans-serif;
+    font-size: 1.8rem;
+    -webkit-text-stroke: 0.5px black;
 
 }
 
@@ -19,7 +22,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
 }
 
 .proj-card {
@@ -28,6 +31,8 @@
     flex-basis: 360px;
     margin: 10px;
     border-radius: 15px;
+    overflow: hidden;
+
 }
 
 .proj-card span {
@@ -49,10 +54,25 @@
 
 .proj-card-back {
     transform: rotateY(180deg);
-    overflow: scroll;
+    backface-visibility: hidden;
     text-align: center;
-    padding: 10px 15px;
     background-color: white;
+}
+
+.proj-card-back-scroll {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    touch-action: auto;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proj-card-front {
+    overflow: hidden;
 }
 
 .proj-card-front,
@@ -135,8 +155,7 @@
     height: 70%;
 
     object-fit: cover;
-    background-color: lightgray;
-    border-radius: 15px 15px 0 0;
+    background-color: black;
     border-bottom: solid 3px black;
 }
 

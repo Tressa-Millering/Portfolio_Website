@@ -45,21 +45,31 @@
 }
 
 .resume-link {
-    text-decoration: none;
-}
+    position: relative;
+    padding: 2% 3%;
+    width: fit-content;
 
+    font-size: clamp(20px, 1.9vw, 1.9vw);
+    text-decoration: underline;
+    color: black;
 
-.resume-link:link {
-    color: white;
-}
+    text-wrap: nowrap;
 
-.resume-link:hover {
-    color: pink;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.25s ease-in-out;
+    box-shadow: inset 0 0 2px black;
+
 }
 
 .resume-link:visited {
-    color: white;
+    color: black;
+}
 
+.resume-link:hover {
+    color: black;
+    background-color: #ffd600;
+    transform: translateY(-5px);
 }
 
 @media (max-width: 700px) {

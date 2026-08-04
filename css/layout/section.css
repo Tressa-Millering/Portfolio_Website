@@ -7,10 +7,9 @@ section {
 .section-title {
     text-decoration: underline;
     font-size: 2.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     font-family: Lexend,Lato, "Ebrima", "Segoe UI", sans-serif;
-
 
 }
 
@@ -19,4 +18,19 @@ section {
     font-weight: 400;
     margin-bottom: 2rem;
     font-size: 1.2rem;
+}
+
+
+.section-subtitle a {
+    font-size: 1.5rem;
+    font-family: lato, "ebrima", "Segoe UI", sans-serif;
+    font-weight: bolder;
+
+    color: #8700a3;
+}
+
+
+.section-subtitle a:hover {
+    color: lightskyblue;
+    -webkit-text-stroke: 0.75px darkblue;
 }

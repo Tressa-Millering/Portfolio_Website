@@ -8,7 +8,7 @@ export default function initScrollIntoView () {
             });
         },
         {
-            threshold: 0.8
+            threshold: 0.7
         }
     );
 

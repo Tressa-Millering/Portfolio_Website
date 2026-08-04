@@ -9,7 +9,7 @@ export default function initModals() {
 
     const closeModalButtons = document.querySelectorAll('.close-modal');
 
-    const resnav = document.querySelector('.res-nav');
+    const resnav = document.querySelector('.resnav');
 
     let inModal = false;
 
@@ -34,6 +34,7 @@ export default function initModals() {
                 modals[currModal].style.display = 'block';
                 modals[currModal].offsetHeight;
                 modals[currModal].classList.add('show');
+
             }
         })
     })
@@ -47,7 +48,7 @@ export default function initModals() {
 
 
     closeModalButtons.forEach((button) => {
-        button.addEventListener('click', (e) => { closeModal() })
+        button.addEventListener('click', () => { closeModal() })
     })
 
 
@@ -61,6 +62,7 @@ export default function initModals() {
             if (e.target !== modals[currModal]) return;
             if (e.propertyName !== 'top') return;
 
+            modals[currModal].scrollTo(0,0);
             modals[currModal].style.display = 'none';
             body.classList.remove('scroll-lock');
             cards[currCard].children[0].classList.remove('animation-lock');

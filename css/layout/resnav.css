@@ -1,0 +1,141 @@
+
+.resnav {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    transition: margin 0.5s ease;
+    z-index: 1;
+
+}
+
+.resnav-container, .resnav-links {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.resnav-links a {
+    height: 50px;
+    width: 140px;
+
+    border-radius: 10px;
+    border: solid 2px #855305;
+    background-color: #FCCA4F;
+
+    position: relative;
+    cursor: pointer;
+    display: block;
+
+    margin: 10px -250px;
+    color: #855305;
+
+    font-family: Lexend, "Ebrima", "Segoe UI",sans-serif;
+
+    transition: margin 0.5s ease, box-shadow 0.5s ease;
+
+    box-shadow: 0 0 1px #855305,
+                inset 0 0 5px #855305;
+
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+}
+
+.resnav-links a:last-child {
+    font-family: "Momo Trust Display", Lexend, "Ebrima", "Segoe UI",sans-serif;
+}
+
+
+.resnav-open {
+    height: 50px;
+    width: 50px;
+
+    border-radius: 10px;
+    border: solid 2px #855305;
+    background-color: #FCCA4F;
+
+    position: relative;
+    cursor: pointer;
+    display: block;
+    outline: none;
+     box-shadow: 0 0 1px #855305,                    
+                 inset 0 0 3px #855305;
+}
+
+.resnav-open input {
+    display: none;
+}
+
+.resnav-open span {
+    display: block;
+    height: 4px;
+    width: 80%;
+    background: black;
+    border-radius: 9px;
+    transition: .25s ease-in-out;
+
+    position: absolute;
+    transform-origin: left;
+
+    left: 10%;
+    top: 50%;
+}
+
+.resnav-open span:first-of-type {
+    top: 20%;
+}
+
+.resnav-open span:last-of-type {
+    top: 80%;
+}
+
+.resnav-open input:checked ~ span:nth-of-type(1) {
+    background-color: black;
+    transform:  translateY(-1vw) translateX(2px) rotate(45deg);
+    width: 12.8vw;
+}
+
+.resnav-open input:checked ~ span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.resnav-open input:checked ~ span:nth-of-type(3) {
+    transform: translateY(1vw) translateX(2px) rotate(-45deg);
+    width: 12.8vw;
+}
+
+
+.resnav-active a {
+    margin: 10px 0 !important;
+}
+
+.resnav:has(.resnav-active) {
+    z-index: 3;
+}
+
+.resnav-active {
+    & a:hover, & a:focus {
+        margin: 10px 15px !important;
+        border: 3px solid saddlebrown;
+        color: black;
+        outline: none;
+        box-shadow: 15px 0 0 saddlebrown,
+                    inset 0 0 5px saddlebrown;
+    
+
+    }
+}
+
+
+
+
+@media (pointer: coarse) or (max-width: 800px) {
+    .resnav {
+        display: block;
+    }
+}

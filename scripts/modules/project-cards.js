@@ -1,4 +1,4 @@
-export default function initCardLinks() {
+export default function initProjectCards() {
     const cardLinks = document.querySelectorAll('.proj-card-link');
 
     cardLinks.forEach(link => {
@@ -6,4 +6,5 @@ export default function initCardLinks() {
             e.stopPropagation();
         })
     })
+
 }

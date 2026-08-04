@@ -3,7 +3,7 @@ export default function initScrollButtons() {
 
     const buttons = document.querySelectorAll('.scroll-link');
 
-    const resnavLinks = document.querySelector('.res-nav-links');
+    const resnavLinks = document.querySelector('.resnav-links');
 
 
     document.querySelector('.scroll-to-top').addEventListener('click', () => {
