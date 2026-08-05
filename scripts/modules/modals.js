@@ -3,6 +3,8 @@ export default function initModals() {
 
     const cards = document.querySelectorAll('.proj-card');
 
+    const skillLinks = document.querySelectorAll('.skill-link');
+
     const modals = document.querySelectorAll('.modal');
 
     const body = document.querySelector('body');
@@ -17,23 +19,12 @@ export default function initModals() {
 
     let currModal = null;
 
+    let openedByLink = false;
+
     cards.forEach((card, index) => {
         card.addEventListener('click',  () => {
             if (!inModal) {
-                currCard = index;
-                currModal = index;
-                inModal = true;
-
-                resnav.classList.toggle('hide-res-nav');
-
-                cards[currCard].children[0].classList.add('animation-lock');
-                cards[currCard].offsetHeight; // Trigger a reflow, flushing the CSS changes
-                body.classList.add('scroll-lock');
-
-                modals[currModal].style.display = 'block';
-                modals[currModal].offsetHeight;
-                modals[currModal].classList.add('show');
-
+                openModal(index);
             }
         })
         card.addEventListener('mouseleave', () => {
@@ -41,6 +32,15 @@ export default function initModals() {
                 card.children[0].children[1].children[0].scrollTo(0,0)
                 card.removeEventListener('transitionend', handler)
             })
+        })
+    })
+
+    skillLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+            if (!inModal) {
+                openedByLink = true;
+                openModal(parseInt(JSON.stringify(link.classList[1]).slice(6))-1)
+            }
         })
     })
 
@@ -56,25 +56,45 @@ export default function initModals() {
         button.addEventListener('click', () => { closeModal() })
     })
 
+    function openModal(index) {
+        currCard = index;
+        currModal = index;
+        inModal = true;
+
+        resnav.classList.toggle('hide-res-nav');
+
+        cards[currCard].children[0].classList.add('animation-lock');
+        cards[currCard].offsetHeight; // Trigger a reflow, flushing the CSS changes
+        body.classList.add('scroll-lock');
+
+        modals[currModal].style.display = 'block';
+        modals[currModal].offsetHeight;
+        modals[currModal].classList.add('show');
+    }
 
     function closeModal() {
         modals[currModal].classList.remove('show')
         modals[currModal].classList.add('exit')
         resnav.classList.toggle('hide-res-nav');
 
+        if (!openedByLink) {
+            modals[currModal].addEventListener('transitionend', function handler(e) {
+                if (e.target !== modals[currModal]) return;
+                if (e.propertyName !== 'top') return;
+                finishClose()
+                modals[currModal].removeEventListener('transitionend', handler)
+            })
+        } else finishClose()
+    }
 
-        modals[currModal].addEventListener('transitionend', function handler(e) {
-            if (e.target !== modals[currModal]) return;
-            if (e.propertyName !== 'top') return;
-
-            modals[currModal].scrollTo(0,0);
-            modals[currModal].style.display = 'none';
-            body.classList.remove('scroll-lock');
-            cards[currCard].children[0].classList.remove('animation-lock');
-            inModal = false;
-            modals[currModal].classList.remove('exit');
-            modals[currModal].removeEventListener('transitionend', handler)
-        })
+    function finishClose() {
+        modals[currModal].scrollTo(0,0);
+        modals[currModal].style.display = 'none';
+        body.classList.remove('scroll-lock');
+        cards[currCard].children[0].classList.remove('animation-lock');
+        inModal = false;
+        openedByLink = false;
+        modals[currModal].classList.remove('exit');
     }
 
 }

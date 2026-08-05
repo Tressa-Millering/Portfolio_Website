@@ -158,7 +158,14 @@
     object-fit: cover;
     background-color: black;
     border-bottom: solid 3px black;
+
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+
 }
+
+
 
 
 .proj-card-title-back {
@@ -189,3 +196,8 @@
         opacity: 0 !important;
     }
 }
+
+@media (max-width: 397px) {
+    .proj-card
+}
+

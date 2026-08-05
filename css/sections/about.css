@@ -153,6 +153,11 @@
         font-size: 3vmin;
     }
 
+    .about-text > ul {
+        text-align: center;
+        padding: 0;
+    }
+
     .about-text > ul * {
         text-align: center;
         list-style-position: inside;

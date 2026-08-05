@@ -30,18 +30,23 @@ export default function initNav() {
     }, 200);
 
     const scrollDebounce = debounce(() => {
-        if (window.scrollY >= 150 && !navbar_active) {
-            navbar_active = true;
-            navbar.classList.add('scrolled');
-            navbar.style.paddng = ""
+        if (window.scrollY >= 150) {
             scrollButton.style.opacity = '1';
-            return;
+            if (!navbar_active) {
+                navbar_active = true;
+                navbar.classList.add('scrolled');
+                navbar.style.paddng = ""
+                return;
+            }
         }
 
-        if (window.scrollY < 150 && window.innerWidth >= 945 && navbar_active) {
-            navbar_active = false;
-            navbar.classList.remove('scrolled');
+        if (window.scrollY < 150) {
             scrollButton.style.opacity = '0';
+
+            if (window.innerWidth >= 945 && navbar_active) {
+                navbar_active = false;
+                navbar.classList.remove('scrolled');
+            }
         }
     }, 25)
 

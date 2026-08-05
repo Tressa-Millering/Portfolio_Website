@@ -68,4 +68,15 @@
     right: 9px;
 }
 
+.skill-link {
+    text-decoration: underline;
+    transition: color 0.15s ease;
+    font-weight: bold;
+}
+
+.skill-link:hover {
+    color: darkmagenta;
+}
+
+
 
